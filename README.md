@@ -1,15 +1,15 @@
 # Hardware QRNG Investigation
 
-This repository records my attempt to build and understand a physical entropy source using a green LED, an LM358 amplifier, an Arduino and a set of analysis tools.
+This is my attempt to investigate whether a circuit built around a green LED, an LM358 op amp and an Arduino can serve as a physical entropy source, using a set of analysis tools to evaluate its output. I also generated [cool art](#art) using the bitstream, which you should check out. Refer to the [repository guide](#repositoryguide) and use the [contents section](#contents) to access everything more easily. Enjoy your time here :)) (Btw "ED" means Entropy Demonstrator.)
 
 **Author:** Trishan Biswas  
 **Project started:** December 2025  
 **First complete demonstrator and dataset:** April 2026
 
-| ED-1 recorded signal and bitstream | ED-2 improved hardware |
+| ED-1 bit balance and software comparison | ED-2 improved hardware |
 |:---:|:---:|
-| ![ED-1 source diagnostics showing the recorded ADC signal and extracted bitstream](figures/ED-1/source_diagnostics.png) | ![Top view of the ED-2 improved breadboard](hardware/ED-2/photos/ed2-breadboard-overview.jpeg) |
-| Diagnostic view of the first recorded dataset | Revised analogue circuit producing live ADC readings |
+| ![ED-1 bit balance, entropy and raw ADC comparison](figures/ED-1/comparison.png) | ![Top view of the ED-2 improved breadboard](hardware/ED-2/photos/ed2-breadboard-overview.jpeg) |
+| Comparison of the first recorded dataset with a software control | Revised analogue circuit producing live ADC readings |
 
 ## Contents
 
