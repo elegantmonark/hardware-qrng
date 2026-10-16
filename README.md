@@ -6,6 +6,11 @@ This repository records my attempt to build and understand a physical entropy so
 **Project started:** December 2025  
 **First complete demonstrator and dataset:** April 2026
 
+| ED-1 recorded signal and bitstream | ED-2 improved hardware |
+|:---:|:---:|
+| ![ED-1 source diagnostics showing the recorded ADC signal and extracted bitstream](figures/ED-1/source_diagnostics.png) | ![Top view of the ED-2 improved breadboard](hardware/ED-2/photos/ed2-breadboard-overview.jpeg) |
+| Diagnostic view of the first recorded dataset | Revised analogue circuit producing live ADC readings |
+
 ## Contents
 
 [Overview](#overview) | [Development](#development) | [ED 1 results](#ed1results) | [ED 2 circuit](#ed2circuit) | [ED 3 enclosure](#ed3enclosure) | [Hardware photographs](#photographs) | [Repository guide](#repositoryguide) | [Reproducing the analysis](#analysis) | [Collecting new data](#collection) | [Generative art](#art) | [Limits](#limits) | [Next work](#nextwork) | [Licence](#licence)
