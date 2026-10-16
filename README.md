@@ -1,6 +1,6 @@
 # Hardware QRNG Investigation
 
-This is my attempt to investigate whether a circuit built around a green LED, an LM358 op amp and an Arduino can serve as a physical entropy source, using a set of analysis tools to evaluate its output. I also generated [cool art](#art) using the bitstream, which you should check out. Refer to the [repository guide](#repositoryguide) and use the [contents section](#contents) to access everything more easily. Enjoy your time here :)) (Btw "ED" means Entropy Demonstrator.)
+This is my attempt to investigate whether a circuit built around a green LED, an LM358 op amp and an Arduino can serve as a physical entropy source, using a set of analysis tools to evaluate its output. I also generated [cool art](#art) using the bitstream, which you should check out. Refer to the [repository guide](#repositoryguide) and use the [contents section](#contents) to access everything more easily. Enjoy your time here :)) (BE SURE TO READ THE "IMPORTANT" SECTIONS!)
 
 **Author:** Trishan Biswas  
 **Project started:** December 2025  
@@ -195,7 +195,10 @@ The images and reproducible source code are available in the [`art` gallery](art
 <a id="limits"></a>
 ## Limits
 
-The project has not yet isolated the contribution of the LED from amplifier noise, converter behaviour, supply movement or environmental interference. ED-1 represents one capture, while ED-2 still needs a controlled data campaign. No output from this repository should be used for cryptographic keys, authentication, gambling, financial decisions or safety critical systems.
+The project has not yet isolated the contribution of the LED from amplifier noise, converter behaviour, supply movement or environmental interference. ED-1 represents one capture, while ED-2 still needs a controlled data campaign.
+
+> [!CAUTION]
+> No output from this repository should be used for cryptographic keys, authentication, gambling, financial decisions or safety critical systems.
 
 Read [`docs/limitations.md`](docs/limitations.md), [`docs/safety.md`](docs/safety.md) and [`SECURITY.md`](SECURITY.md) before reproducing the hardware.
 
