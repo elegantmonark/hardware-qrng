@@ -13,7 +13,7 @@ This is my attempt to investigate whether a circuit built around a green LED, an
 
 ## Contents
 
-[Overview](#overview) | [Quick terminology](#terminology) | [Development](#development) | [ED 1 results](#ed1results) | [ED 2 circuit](#ed2circuit) | [ED 3 enclosure](#ed3enclosure) | [Hardware photographs](#photographs) | [Repository guide](#repositoryguide) | [Reproducing the analysis](#analysis) | [Collecting new data](#collection) | [Generative art](#art) | [Limits](#limits) | [Next work](#nextwork) | [Licence](#licence)
+[Overview](#overview) | [Quick terminology](#terminology) | [Development](#development) | [ED 1 results](#ed1results) | [ED 2 circuit](#ed2circuit) | [ED 3 enclosure](#ed3enclosure) | [Hardware photographs](#photographs) | [Repository guide](#repositoryguide) | [Reproducing the analysis](#analysis) | [Collecting new data](#collection) | [Bitstream Art](#art) | [Limits](#limits) | [Next work](#nextwork) | [Licence](#licence)
 
 <a id="overview"></a>
 ## Overview
@@ -46,6 +46,7 @@ Statistical tests can describe a bitstream, but they cannot identify its physica
 | **Least significant bit** | The final binary digit of an ADC reading, recorded here as a candidate random bit |
 | **Bitstream** | The resulting sequence of zeros and ones |
 | **Software control** | A deterministic Mersenne Twister sequence used for comparison, not a NIST reference generator |
+| **Bitstream Art** | Visuals drawn by custom Python programs whose choices are driven by the recorded ED-1 bits. No generative AI model was used |
 | **ED** | Entropy Demonstrator |
 
 The analysis checks balance, repetition, correlation and stability. A balanced output alone does not prove that the signal is quantum or secure.
@@ -186,9 +187,11 @@ python software/collector.py --port COM3 --samples 1000000
 Replace `COM3` with the port used by the Arduino. The collector writes a new timestamped CSV and a JSON metadata file under `data/ED-2/runs/`. A capture should not be published until the circuit values, firmware version, conditions and file hash have been recorded.
 
 <a id="art"></a>
-## Generative art
+## Bitstream Art
 
-The repository includes four artworks generated deterministically from the ED-1 bitstream. They show a traceable creative use of recorded hardware data. They are not evidence of randomness quality.
+The repository includes four artworks drawn deterministically from the ED-1 bitstream by custom Python programs. The recorded bits control visual choices such as paths, positions and colours. No generative AI model was used, and the artwork is not evidence of randomness quality.
+
+![Quantum Fields artwork driven by the recorded ED-1 bitstream](art/output/quantum_fields.png)
 
 The images and reproducible source code are available in the [`art` gallery](art/README.md).
 
@@ -215,4 +218,4 @@ Read [`docs/limitations.md`](docs/limitations.md), [`docs/safety.md`](docs/safet
 <a id="licence"></a>
 ## Licence
 
-The hardware, analysis and documentation are released under the Apache License 2.0 in [`LICENSE`](LICENSE). The generative art directory retains its MIT licence in [`art/LICENSE`](art/LICENSE).
+The hardware, analysis and documentation are released under the Apache License 2.0 in [`LICENSE`](LICENSE). The Bitstream Art directory retains its MIT licence in [`art/LICENSE`](art/LICENSE).

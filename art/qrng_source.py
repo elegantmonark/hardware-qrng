@@ -1,5 +1,5 @@
 """
-qrng_source.py -- Hardware-derived bitstream source for generative art
+qrng_source.py: recorded hardware bitstream source for Bitstream Art
 
 Author: Trishan Biswas
 Created: 14 April 2026

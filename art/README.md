@@ -1,6 +1,6 @@
-# Generative art driven by the bitstream
+# Bitstream Art
 
-This directory contains reproducible generative artwork driven by the recorded ED-1 bitstream.
+This directory contains reproducible artwork drawn by custom Python programs using the recorded ED-1 bitstream. The saved bits control visual decisions in each program. No generative AI model was used.
 
 The pieces are an artistic application of the dataset, not evidence that the source is quantum, independent, or suitable for cryptographic use. References to fields, particles, spectra, measurement, or wavefunctions are visual metaphors rather than physical simulations.
 
