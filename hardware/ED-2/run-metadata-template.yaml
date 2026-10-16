@@ -1,0 +1,40 @@
+schema_version: 1
+run_id: "YYYYMMDD_condition_rep01"
+condition_id: "C0|C1|C2|C3|E1|E2"
+operator: "Trishan Biswas"
+start_time_utc: ""
+git_commit: ""
+
+circuit:
+  demonstrator: "ED-2"
+  revision: ""
+  schematic: ""
+  junction_part: ""
+  junction_colour: ""
+  bias_voltage_v: null
+  measured_current_a: null
+  current_limit_a: null
+  op_amp: "LM358P"
+  op_amp_supply_v: null
+  nominal_gain: null
+  analogue_bandwidth_hz: null
+
+adc:
+  board: ""
+  channel: "A0"
+  resolution_bits: 10
+  reference: ""
+  nominal_sample_rate_hz: null
+
+environment:
+  temperature_c: null
+  power_source: ""
+  nearby_equipment: ""
+
+files:
+  capture_csv: ""
+  capture_sha256: ""
+  photo_paths: []
+  oscilloscope_paths: []
+
+notes: ""

@@ -1,0 +1,10 @@
+Hardware QRNG Investigation
+Copyright 2025-2026 Trishan Biswas
+
+This repository includes a preserved ED-1 experimental dataset collected by
+the copyright holder and documentation for the later ED-2 and ED-3 development
+stages. Statistical results do not certify the physical source, quantum origin,
+or suitability for cryptographic use.
+
+The separately licensed generative-art files under art/ are distributed under
+the MIT License included in art/LICENSE.

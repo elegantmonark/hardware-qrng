@@ -1,0 +1,5 @@
+# Optional dependency only for reproducing the April 2026 exploratory run.
+# This package is not the official NIST STS.
+-r requirements.txt
+scipy>=1.12,<2
+nist80022

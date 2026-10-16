@@ -1,0 +1,37 @@
+{
+  "input": "data/qrng_bits.csv",
+  "sha256": "84f9276dd0746fe06ef0f60ca0d3a2b98d365a43feaad63ccd2901a173a689d0",
+  "samples": 1000000,
+  "ones": 497767,
+  "zeros": 502233,
+  "proportion_ones": 0.497767,
+  "binary_shannon_entropy": 0.9999856125633477,
+  "most_common_value_estimate": 0.9935712686431319,
+  "longest_identical_bit_run": 22,
+  "raw_adc": {
+    "minimum": 0,
+    "maximum": 760,
+    "mean": 315.745987,
+    "standard_deviation": 182.33852682413507,
+    "lag_1_correlation": 0.9057039414583423,
+    "dominant_cycles_per_sample": 0.067256,
+    "dominant_period_samples": 14.868561912691804
+  },
+  "lsb_lag_1_correlation": 0.0011930798132738574,
+  "transition_counts": [
+    [
+      252536,
+      249696
+    ],
+    [
+      249697,
+      248070
+    ]
+  ],
+  "block_size": 1000,
+  "block_entropy_mean": 0.9992702139459964,
+  "notes": [
+    "Descriptive audit only; not a NIST SP 800-90B entropy assessment.",
+    "The most-common-value estimate ignores dependence and non-stationarity."
+  ]
+}

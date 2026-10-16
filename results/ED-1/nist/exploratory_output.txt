@@ -1,0 +1,97 @@
+EXPLORATORY THIRD-PARTY SP 800-22 RUN
+Not official NIST validation; not evidence of quantum origin or security.
+Input: data/qrng_bits.csv
+Bits: 1,000,000
+Run UTC: 2026-09-23T14:32:44.929839+00:00
+Exploratory alpha: 0.01
+
+Frequency (Monobit)
+  monobit_test: p=7.96956e-06 [FAIL]
+
+Block Frequency
+  block_frequency_block_size_128: p=0.483517 [PASS]
+
+Runs
+  Runs: p=0 [FAIL]
+
+Longest Run
+  SKIP (known third-party package incompatibility)
+
+Binary Matrix Rank
+  binary_matrix_rank_text: p=0.333555 [PASS]
+
+FFT Spectral
+  spectral_test: p=0.358795 [PASS]
+
+Non-overlapping Template
+  non_overlapping_test: p=0.354295 [PASS]
+
+Overlapping Template
+  SKIP (known third-party package incompatibility)
+
+Linear Complexity
+  linear_complexity_test: p=0.905349 [PASS]
+
+Universal (Maurer)
+  universal_statistic: p=0.956922 [PASS]
+
+Serial
+  serial_test_1: p=0.972381 [PASS]
+  serial_test_2: p=0.707313 [PASS]
+
+Approximate Entropy
+  approximate_entropy_test: p=0.449507 [PASS]
+
+Cumulative Sums
+  cumulative_sums_test_forwards: p=1.04771e-05 [FAIL]
+
+Random Excursions
+  random_excursions_test_-4: p=0.875378 [PASS]
+  random_excursions_test_-3: p=0.125038 [PASS]
+  random_excursions_test_-2: p=0.564431 [PASS]
+  random_excursions_test_-1: p=0.512157 [PASS]
+  random_excursions_test_+1: p=0.326662 [PASS]
+  random_excursions_test_+2: p=0.0423853 [PASS]
+  random_excursions_test_+3: p=0.676974 [PASS]
+  random_excursions_test_+4: p=0.929335 [PASS]
+
+Random Excursions Variant
+  variant_test_-9.0: p=0.648852 [PASS]
+  variant_test_-8.0: p=0.891552 [PASS]
+  variant_test_-7.0: p=0.864333 [PASS]
+  variant_test_-6.0: p=0.736786 [PASS]
+  variant_test_-5.0: p=0.89111 [PASS]
+  variant_test_-4.0: p=0.85919 [PASS]
+  variant_test_-3.0: p=0.803154 [PASS]
+  variant_test_-2.0: p=0.369367 [PASS]
+  variant_test_-1.0: p=0.264954 [PASS]
+  variant_test_+1.0: p=0.577269 [PASS]
+  variant_test_+2.0: p=0.812565 [PASS]
+  variant_test_+3.0: p=0.24296 [PASS]
+  variant_test_+4.0: p=0.282141 [PASS]
+  variant_test_+5.0: p=0.400372 [PASS]
+  variant_test_+6.0: p=0.357632 [PASS]
+  variant_test_+7.0: p=0.434754 [PASS]
+  variant_test_+8.0: p=0.529559 [PASS]
+  variant_test_+9.0: p=0.559606 [PASS]
+
+FAMILY-LEVEL SUMMARY
+  Frequency (Monobit): FAIL
+  Block Frequency: PASS
+  Runs: FAIL
+  Longest Run: SKIP
+  Binary Matrix Rank: PASS
+  FFT Spectral: PASS
+  Non-overlapping Template: PASS
+  Overlapping Template: SKIP
+  Linear Complexity: PASS
+  Universal (Maurer): PASS
+  Serial: PASS
+  Approximate Entropy: PASS
+  Cumulative Sums: FAIL
+  Random Excursions: PASS
+  Random Excursions Variant: PASS
+
+Interpretation: a rejection flags statistical structure under that test's
+assumptions. A non-rejection is not proof of randomness, unpredictability,
+physical mechanism, quantum origin, or cryptographic safety.

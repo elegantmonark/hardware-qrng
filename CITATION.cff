@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite the repository and the relevant release."
+title: "Hardware QRNG: a low cost entropy source investigation"
+type: software
+authors:
+  - family-names: "Biswas"
+    given-names: "Trishan"
+repository-code: "https://github.com/elegantmonark/hardware-qrng"
+license: Apache-2.0
+version: 0.3.0-dev
+keywords:
+  - quantum random number generation
+  - entropy source
+  - hardware
+  - statistical testing
+  - Arduino

@@ -1,0 +1,102 @@
+﻿=================================================================
+  NIST SP800-22 Statistical Test Suite Results
+  Hardware QRNG — Reverse-Biased LED Avalanche Noise
+  Bitstream length: 1,000,000 bits
+  Date: 2026-04-13 22:48:07
+  Pass threshold: p >= 0.01
+HISTORICAL OUTPUT FROM 2026-04-13 — INTERPRETATION SUPERSEDED
+The p-values below are preserved for provenance. The original conclusion at
+the end overstates what statistical tests can show. See docs/validation.md.
+
+=================================================================
+1. Frequency (Monobit)
+  monobit_test: p = 0.000008  [FAIL]
+
+2. Block Frequency
+  block_frequency_block_size_128: p = 0.483517  [PASS]
+
+3. Runs
+  3. Runs: p = 0.000000  [FAIL]
+
+4. Longest Run
+  SKIPPED — nist80022 library bug (incompatible with
+  current scipy/numpy). See NIST documentation for
+  manual testing of this sub-test.
+
+5. Binary Matrix Rank
+  binary_matrix_rank_text: p = 0.333555  [PASS]
+
+6. FFT Spectral
+  spectral_test: p = 0.358795  [PASS]
+
+7. Non-Overlapping Template
+  non_overlapping_test: p = 0.354295  [PASS]
+
+8. Overlapping Template
+  SKIPPED — nist80022 library bug (incompatible with
+  current scipy/numpy). See NIST documentation for
+  manual testing of this sub-test.
+
+9. Linear Complexity
+  linear_complexity_test: p = 0.905349  [PASS]
+
+10. Universal (Maurer)
+  universal_statistic: p = 0.956922  [PASS]
+
+11. Serial
+  serial_test_1: p = 0.972381  [PASS]
+  serial_test_2: p = 0.707313  [PASS]
+
+12. Approximate Entropy
+  approximate_entropy_test: p = 0.449507  [PASS]
+
+13. Cumulative Sums
+  cumulative_sums_test_forwards: p = 0.000010  [FAIL]
+
+14. Random Excursions
+  random_excursions_test_-4: p = 0.875378  [PASS]
+  random_excursions_test_-3: p = 0.125038  [PASS]
+  random_excursions_test_-2: p = 0.564431  [PASS]
+  random_excursions_test_-1: p = 0.512157  [PASS]
+  random_excursions_test_+1: p = 0.326662  [PASS]
+  random_excursions_test_+2: p = 0.042385  [PASS]
+  random_excursions_test_+3: p = 0.676974  [PASS]
+  random_excursions_test_+4: p = 0.929335  [PASS]
+
+15. Random Excursions Variant
+  variant_test_-9.0: p = 0.648852  [PASS]
+  variant_test_-8.0: p = 0.891552  [PASS]
+  variant_test_-7.0: p = 0.864333  [PASS]
+  variant_test_-6.0: p = 0.736786  [PASS]
+  variant_test_-5.0: p = 0.891110  [PASS]
+  variant_test_-4.0: p = 0.859190  [PASS]
+  variant_test_-3.0: p = 0.803154  [PASS]
+  variant_test_-2.0: p = 0.369367  [PASS]
+  variant_test_-1.0: p = 0.264954  [PASS]
+  variant_test_+1.0: p = 0.577269  [PASS]
+  variant_test_+2.0: p = 0.812565  [PASS]
+  variant_test_+3.0: p = 0.242960  [PASS]
+  variant_test_+4.0: p = 0.282141  [PASS]
+  variant_test_+5.0: p = 0.400372  [PASS]
+  variant_test_+6.0: p = 0.357632  [PASS]
+  variant_test_+7.0: p = 0.434754  [PASS]
+  variant_test_+8.0: p = 0.529559  [PASS]
+  variant_test_+9.0: p = 0.559606  [PASS]
+
+=================================================================
+  SUMMARY
+=================================================================
+  PASS:  35
+  FAIL:  3
+  SKIP:  2  (library bugs or insufficient data)
+  TOTAL: 40
+
+  RESULT: 3 test(s) failed.
+
+  CORRECTED INTERPRETATION (SEPTEMBER 2026):
+  Three reported tests rejected the null hypothesis at the chosen
+  threshold. Non-rejection by the other tests does not prove the
+  absence of periodicity, correlation or compressibility, and no
+  statistical test identifies the physical source as quantum.
+  See docs/validation.md for the current analysis and limitations.
+=================================================================

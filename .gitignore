@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+
+# New captures and derived output are kept local until deliberately reviewed.
+data/ED-1/derived/
+data/ED-2/runs/
+data/controls/
+results/**/qrng_nist.bin
+
+# Local rendering and browser state must never be committed.
+.edge-render-profile/
+**/.edge-render-profile/
+
+# LaTeX build artefacts
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/*.pdf
+paper/*.synctex.gz
