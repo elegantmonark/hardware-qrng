@@ -24,7 +24,7 @@ board_thickness = 1.6;
 
 // Enclosure sizing.
 board_side_clearance = 8;
-internal_height = 65;       // 2.56 inches from floor to lid underside.
+internal_height = 34;       // Gives 24.4 mm above the supported perfboard.
 wall = 2.4;
 floor_thickness = 3;
 lid_top_thickness = 3;

@@ -10,12 +10,14 @@ The ED-3 enclosure is a parametric case with two parts for FDM printing. It is d
 | Clearance around board | 8 mm per side |
 | Internal length | 105 mm |
 | Internal width | 68 mm |
-| Internal height | 65 mm / 2.56 inches |
+| Internal height | 34 mm |
 | Wall thickness | 2.4 mm |
 | Floor thickness | 3 mm |
 | Board support height | 8 mm |
 | Cable opening | 26 × 12 mm |
-| Approximate external size | 109.8 × 72.8 × 68 mm, excluding lid thickness |
+| Approximate external size | 109.8 × 72.8 × 37 mm, excluding lid thickness |
+| Approximate assembled height | 40 mm |
+| Clearance above perfboard | 24.4 mm |
 
 The cable opening carries the five connections between ED-3 and the Arduino:
 
@@ -66,4 +68,4 @@ The default `"layout"` view places both parts in their print orientation side by
 - Supports: none expected for the base or the lid in its print orientation.
 - First test: print only the lower 15 mm of the base and the lid lip if the slicer supports cutting models. This checks board fit and lid tolerance before committing to the full height print.
 
-Before the final print, measure the assembled perfboard's tallest component and confirm that 65 mm internal height is still appropriate.
+Before the final print, measure the assembled perfboard's tallest component and confirm that 24.4 mm of clearance above the board is sufficient.

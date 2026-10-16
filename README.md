@@ -113,10 +113,10 @@ The ED-3 case is a two part parametric design for the planned perfboard build.
 | Dimension | Value |
 |---|---:|
 | Perfboard | 89 by 52 mm |
-| Internal space | 105 by 68 by 65 mm |
-| Approximate assembled exterior | 109.8 by 72.8 by 71 mm |
+| Internal space | 105 by 68 by 34 mm |
+| Approximate assembled exterior | 109.8 by 72.8 by 40 mm |
 | Board support height | 8 mm |
-| Clearance above the board | approximately 55.4 mm |
+| Clearance above the board | approximately 24.4 mm |
 | Cable opening | 26 by 12 mm |
 
 The cable opening carries five Arduino connections: 5 V, 3.3 V, GND, A0 and D7. Arduino AREF remains unconnected.
