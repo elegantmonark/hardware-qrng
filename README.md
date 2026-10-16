@@ -9,11 +9,11 @@ This is my attempt to investigate whether a circuit built around a green LED, an
 | ED-1 bit balance and software comparison | ED-2 improved hardware |
 |:---:|:---:|
 | ![ED-1 bit balance, entropy and raw ADC comparison](figures/ED-1/comparison.png) | ![Top view of the ED-2 improved breadboard](hardware/ED-2/photos/ed2-breadboard-overview.jpeg) |
-| Comparison of the first recorded dataset with a software control | Revised analogue circuit producing live ADC readings |
+| ED-1 output compared with a deterministic Mersenne Twister control. Similar results do not establish physical origin or security. | Revised analogue circuit producing live ADC readings |
 
 ## Contents
 
-[Overview](#overview) | [Development](#development) | [ED 1 results](#ed1results) | [ED 2 circuit](#ed2circuit) | [ED 3 enclosure](#ed3enclosure) | [Hardware photographs](#photographs) | [Repository guide](#repositoryguide) | [Reproducing the analysis](#analysis) | [Collecting new data](#collection) | [Generative art](#art) | [Limits](#limits) | [Next work](#nextwork) | [Licence](#licence)
+[Overview](#overview) | [Quick terminology](#terminology) | [Development](#development) | [ED 1 results](#ed1results) | [ED 2 circuit](#ed2circuit) | [ED 3 enclosure](#ed3enclosure) | [Hardware photographs](#photographs) | [Repository guide](#repositoryguide) | [Reproducing the analysis](#analysis) | [Collecting new data](#collection) | [Generative art](#art) | [Limits](#limits) | [Next work](#nextwork) | [Licence](#licence)
 
 <a id="overview"></a>
 ## Overview
@@ -36,6 +36,20 @@ The investigation asks three practical questions:
 
 Statistical tests can describe a bitstream, but they cannot identify its physical origin on their own. The circuit, sampling process and possible interference must be studied alongside the output.
 
+<a id="terminology"></a>
+## Quick terminology
+
+| Term | Meaning in this project |
+|---|---|
+| **Entropy source** | A physical process being investigated as a possible source of unpredictable variation |
+| **ADC reading** | A number produced when the Arduino converts the measured circuit voltage into a digital value |
+| **Least significant bit** | The final binary digit of an ADC reading, recorded here as a candidate random bit |
+| **Bitstream** | The resulting sequence of zeros and ones |
+| **Software control** | A deterministic Mersenne Twister sequence used for comparison, not a NIST reference generator |
+| **ED** | Entropy Demonstrator |
+
+The analysis checks balance, repetition, correlation and stability. A balanced output alone does not prove that the signal is quantum or secure.
+
 <a id="development"></a>
 ## Development
 
@@ -43,7 +57,8 @@ I began the project in December 2025 because it combined semiconductor physics, 
 
 In April 2026, ED-1 became the first complete demonstrator. It produced a saved sequence of one million ADC readings and one least significant bit from each reading. I then built a software control, generated comparison figures and ran exploratory statistical tests.
 
-The first result looked promising because the extracted bits were close to balanced. A later audit showed that the raw ADC sequence contained strong correlation and a repeating component. This did not make ED-1 useless. It made ED-1 a clear baseline and showed what the next version needed to improve.
+> [!IMPORTANT]
+> The first result looked promising because the extracted bits were close to balanced. A later audit showed that the raw ADC sequence contained strong correlation and a repeating component. This did not make ED-1 useless. It made ED-1 a clear baseline and showed what the next version needed to improve.
 
 ED-2 kept the original LED source idea but added a defined midpoint reference, two amplifier stages, clearer bias paths, supply decoupling, output protection and a separate collection status indicator. The build also gained a complete breadboard record and a collector that writes timestamps and metadata.
 
