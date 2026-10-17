@@ -3,6 +3,11 @@
 // Original sampler created: 14 April 2026
 // ED-2 hardware revision: 16 October 2026
 //
+// PlatformIO CLI commands (run from the qrng_final directory):
+//   pio run -e uno
+//   pio run -e uno -t upload --upload-port COM3
+//   pio device monitor -p COM3 -b 115200
+//
 // The amplified analogue signal enters through A0. Each line sent over serial
 // contains the raw 10-bit ADC reading and its least significant bit:
 //
