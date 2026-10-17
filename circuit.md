@@ -1,5 +1,11 @@
 # ED-2 LED entropy source circuit
 
+> [!IMPORTANT]
+> This file preserves the ED-2 development circuit. During October 2026
+> bring-up, its Stage A gain-reference branch pulled the unbuffered midpoint
+> reference from approximately 2.5 V to approximately 1.3 V. The current ED-3
+> redesign is documented in [`hardware/ED-3/circuit.md`](hardware/ED-3/circuit.md).
+
 ## Purpose
 
 This circuit captures fluctuations from a green LED under reverse bias through a

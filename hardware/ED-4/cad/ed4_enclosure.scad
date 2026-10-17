@@ -1,10 +1,10 @@
 /*
-ED-3 parametric perfboard enclosure
+ED-4 parametric perfboard enclosure
 Author: Trishan Biswas
 Created: 16 October 2026
 
-The enclosure holds one 89 mm by 52 mm perfboard and routes the five-wire
-Arduino harness through a single side opening. Dimensions are in millimetres.
+The enclosure holds one 89 mm by 52 mm perfboard and routes the Arduino harness
+through a single side opening. Dimensions are in millimetres.
 
 Set part to "base", "lid", "assembled" or "layout" before rendering.
 The default layout places both printable parts on the build plane.

@@ -2,7 +2,7 @@
 
 Author: Trishan Biswas
 Created: 14 April 2026
-ED-2 update: 16 October 2026
+ED-3 update: 17 October 2026
 
 This program records measurements; it does not assume that the measured noise
 is quantum or that the extracted bits are secure.
@@ -45,7 +45,7 @@ def resolve_port(requested: str | None) -> str:
 
 def default_output() -> Path:
     stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    return PROJECT_ROOT / "data" / "ED-2" / "runs" / f"capture_{stamp}.csv"
+    return PROJECT_ROOT / "data" / "ED-3" / "runs" / f"capture_{stamp}.csv"
 
 
 def sha256(path: Path) -> str:
@@ -65,12 +65,12 @@ def parse_args() -> argparse.Namespace:
         "--output",
         type=Path,
         default=None,
-        help="Output CSV (default: timestamped file in data/ED-2/runs)",
+        help="Output CSV (default: timestamped file in data/ED-3/runs)",
     )
     parser.add_argument("--reset-delay", type=float, default=2.0)
     parser.add_argument("--progress-every", type=int, default=10_000)
     parser.add_argument("--max-retries", type=int, default=3)
-    parser.add_argument("--demonstrator", default="ED-2")
+    parser.add_argument("--demonstrator", default="ED-3")
     parser.add_argument("--overwrite", action="store_true")
     parser.add_argument("--list-ports", action="store_true")
     return parser.parse_args()

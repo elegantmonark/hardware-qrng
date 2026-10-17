@@ -4,7 +4,7 @@
 
 The published April 2026 file is one continuous ED-1 capture of ADC values and their least significant bits. It provides evidence about that run only. It does not establish behaviour across different units, restart behaviour, temperature stability, quantum dominance, or resistance to an active attacker.
 
-ED-2 has not yet produced a published validation dataset.
+ED-2 has not produced a published validation dataset. ED-3 is awaiting assembly and staged bring-up.
 
 ## ED-1 descriptive results
 
@@ -51,7 +51,7 @@ The old summary counted individual Random Excursions states as separate passes a
 
 Statistical tests cannot certify a generator for a security application or identify the physical origin of its entropy.
 
-## ED-2 validation sequence
+## ED-3 validation sequence
 
 1. Verify and photograph the exact circuit as built.
 2. Record source, supply, gain, ADC reference, firmware, sampling, and environment.
@@ -61,7 +61,7 @@ Statistical tests cannot certify a generator for a security application or ident
 6. Choose an IID or non IID model based on evidence.
 7. Estimate entropy conservatively and define health test limits.
 8. Condition only within the supported entropy rate.
-9. Repeat relevant validation after the ED-3 transfer.
+9. Repeat relevant validation after the ED-4 perfboard transfer.
 
 ## Primary references
 

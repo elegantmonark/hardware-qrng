@@ -4,9 +4,9 @@
 
 The ED-1 record does not include a measured LED current and voltage curve, oscilloscope trace, analogue spectrum, complete gain network record, or timestamps. The captured signal may include junction noise, amplifier noise, ADC and reference noise, supply ripple, interference, sampling interaction, or floating input behaviour.
 
-## ED-2 is not yet statistically characterised
+## ED-2 exposed a reference-loading problem
 
-ED-2 improves the circuit record and analogue topology, and it has produced live ADC readings. No validated ED-2 dataset is currently published. Its performance cannot be inferred from ED-1 or from successful connectivity alone.
+ED-2 improved the circuit record and produced live ADC readings, but systematic probing showed its unbuffered midpoint reference collapsing under the Stage A reference branch. No validated ED-2 dataset is published. ED-3 is a proposed correction and must be tested independently.
 
 ## LSB extraction is not a source model
 
@@ -28,6 +28,6 @@ The historical SP 800-22 output came from an external package, skipped two tests
 
 The project has not been qualified against supply injection, electromagnetic coupling, temperature manipulation, optical injection, component substitution, or malicious interference with the data path.
 
-## ED-3 enclosure is not validation
+## ED-4 enclosure is not validation
 
-A perfboard assembly or printed enclosure may improve mechanical stability but can also alter coupling, temperature, grounding, and noise. ED-3 must repeat the relevant controls and measurements after assembly.
+A perfboard assembly or printed enclosure may improve mechanical stability but can also alter coupling, temperature, grounding, and noise. ED-4 must repeat the relevant controls and measurements after assembly.

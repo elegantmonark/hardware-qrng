@@ -1,12 +1,14 @@
-# ED-3 enclosure CAD
+# ED-4 enclosure CAD
 
-The ED-3 enclosure is a parametric case with two parts for FDM printing. It is designed for the planned 89 mm by 52 mm perfboard implementation.
+The ED-4 enclosure is a parametric case with two parts for FDM printing. It is designed for the planned 89 mm by 52 mm perfboard implementation.
+
+The first base was printed and checked on 18 October 2026. The intended bare perfboard fitted between the locating features. Populated-board clearance, cable routing and lid fit still require confirmation.
 
 ## Current dimensions
 
 | Parameter | Value |
 |---|---:|
-| Perfboard envelope | 89 × 52 mm |
+| Perfboard envelope | 89 by 52 mm |
 | Clearance around board | 8 mm per side |
 | Internal length | 105 mm |
 | Internal width | 68 mm |
@@ -14,19 +16,17 @@ The ED-3 enclosure is a parametric case with two parts for FDM printing. It is d
 | Wall thickness | 2.4 mm |
 | Floor thickness | 3 mm |
 | Board support height | 8 mm |
-| Cable opening | 26 × 12 mm |
-| Approximate external size | 109.8 × 72.8 × 37 mm, excluding lid thickness |
+| Cable opening | 26 by 12 mm |
+| Approximate external size | 109.8 by 72.8 by 37 mm, excluding lid thickness |
 | Approximate assembled height | 40 mm |
 | Clearance above perfboard | 24.4 mm |
 
-The cable opening carries the five connections between ED-3 and the Arduino:
+The cable opening carries the four connections currently planned between ED-4 and the Arduino:
 
 1. 5 V
 2. 3.3 V
 3. GND
 4. A0 analogue signal
-5. D7 collection status output
-
 Arduino AREF remains unconnected.
 
 ## Design choices
@@ -34,18 +34,18 @@ Arduino AREF remains unconnected.
 - Two rails create clearance beneath the perfboard.
 - Four corner guides locate the board without assuming particular positions for mounting holes.
 - A locating lip held by friction avoids unusually long lid screws on the tall enclosure.
-- The five wires share one side opening so individual Dupont housings or a sleeved bundle can pass through.
+- The wires share one side opening so individual Dupont housings or a sleeved bundle can pass through.
 - The enclosure has no ventilation holes beside the source LED, avoiding an unnecessary optical path during early testing.
 - The design remains a mechanical prototype. Enclosing the circuit does not establish electrical or statistical performance.
 
 ## Exporting printable parts
 
-Open `ed3_enclosure.scad` in OpenSCAD and set the `part` variable to `"base"` or `"lid"`. Render with F6, then export each part as STL.
+Open `ed4_enclosure.scad` in OpenSCAD and set the `part` variable to `"base"` or `"lid"`. Render with F6, then export each part as STL.
 
 The repository already includes:
 
-- `ed3_base.stl`
-- `ed3_lid.stl`
+- `ed4_base.stl`
+- `ed4_lid.stl`
 - `SHA256SUMS` for verifying both exports
 
 Both STL files were rendered successfully from the included source and passed a manifold check with closed edges. Physical fit and print tolerances still require a first test print.
@@ -53,8 +53,8 @@ Both STL files were rendered successfully from the included source and passed a 
 From the command line:
 
 ```bash
-openscad -D part_id=0 -o ed3_base.stl ed3_enclosure.scad
-openscad -D part_id=1 -o ed3_lid.stl ed3_enclosure.scad
+openscad -D part_id=0 -o ed4_base.stl ed4_enclosure.scad
+openscad -D part_id=1 -o ed4_lid.stl ed4_enclosure.scad
 ```
 
 The default `"layout"` view places both parts in their print orientation side by side. The `"assembled"` view adds a translucent board and lid for fit inspection.

@@ -6,11 +6,21 @@ Successful ADC readings confirm basic connectivity, but they are not a substitut
 
 ## Photographs
 
+### Latest documented breadboard
+
+![Latest documented ED-2 breadboard](photos/ed2-current-breadboard-closeup.jpeg)
+
+Close view of the most recent documented ED-2 arrangement, photographed on 18 October 2026. This photograph records the hardware state only and is not evidence of a validated entropy source.
+
+![ED-2 breadboard and Arduino overview](photos/ed2-current-system-overview.jpeg)
+
+Wider view from 18 October 2026 showing the same breadboard arrangement with its Arduino connection.
+
 ### Breadboard overview
 
 ![ED-2 breadboard overview](photos/ed2-breadboard-overview.jpeg)
 
-Top view of the ED-2 breadboard showing the complete analogue layout.
+Earlier top view of the ED-2 breadboard showing the analogue layout during development.
 
 ### Close view of the analogue stage
 

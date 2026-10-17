@@ -43,18 +43,22 @@ ED-2 was assembled as an improved experimental demonstrator. The build documente
 - a separate D7 acquisition status LED; and
 - a timestamped collector with metadata sidecars.
 
-Successful ADC readings confirmed basic connectivity. ED-2 has not yet produced a published validation dataset, so no statistical or entropy improvement is claimed yet.
+Successful ADC readings confirmed basic connectivity, but systematic probing found that the Stage A gain-reference branch pulled the unbuffered midpoint from approximately 2.5 V to approximately 1.3 V. ED-2 has not produced a published validation dataset, so no statistical or entropy improvement is claimed.
 
-## ED-3: enclosure and permanent build direction
+## October 2026: ED-3 simplified breadboard redesign
 
-ED-3 is the next mechanical stage: transfer of the verified ED-2 circuit to perfboard, labelled external wiring, strain relief, and a 3D printed enclosure. The first printed shell is a fit and presentation prototype. Electrical validation must be repeated after any transfer to a permanent board.
+ED-3 replaces the two signal-gain stages with one buffered midpoint reference and one signal amplifier. The redesign is intended to prevent the gain network from collapsing the reference and to make staged fault isolation easier. Assembly and validation remain pending.
+
+## ED-4: enclosure and permanent build direction
+
+ED-4 is the later mechanical stage: transfer of a verified ED-3 circuit to perfboard, labelled external wiring, strain relief, and a 3D printed enclosure. The first base was printed in October 2026, and an unpopulated 89 by 52 mm perfboard fitted correctly between its locating features. This remains a fit and presentation prototype. Populated-board clearance, cable routing and electrical validation must still be checked after transfer.
 
 ## Current direction
 
 The project is moving from "bits that look random" toward a reproducible investigation of a physical entropy source:
 
 - preserve ED-1 as historical evidence;
-- characterise ED-2 with controls and repeat captures;
+- assemble and characterise ED-3 with controls and repeat captures;
 - estimate entropy conservatively rather than from balance alone;
 - add conditioning and health tests only after establishing a source model; and
-- build ED-3 without confusing mechanical completion with validation.
+- build ED-4 without confusing mechanical completion with validation.

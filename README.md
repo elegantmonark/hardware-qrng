@@ -6,25 +6,26 @@ This is my attempt to investigate whether a circuit built around a green LED, an
 **Project started:** December 2025  
 **First complete demonstrator and dataset:** April 2026
 
-| ED-1 bit balance and software comparison | ED-2 improved hardware |
+| ED-1 bit balance and software comparison | ED-2 latest breadboard build |
 |:---:|:---:|
-| ![ED-1 bit balance, entropy and raw ADC comparison](figures/ED-1/comparison.png) | ![Top view of the ED-2 improved breadboard](hardware/ED-2/photos/ed2-breadboard-overview.jpeg) |
-| ED-1 output compared with a deterministic Mersenne Twister control. Similar results do not establish physical origin or security. | Revised analogue circuit producing live ADC readings |
+| ![ED-1 bit balance, entropy and raw ADC comparison](figures/ED-1/comparison.png) | ![Close view of the latest documented ED-2 breadboard](hardware/ED-2/photos/ed2-current-breadboard-closeup.jpeg) |
+| ED-1 output compared with a deterministic Mersenne Twister control. Similar results do not establish physical origin or security. | Latest documented ED-2 arrangement, retained as a development build rather than a validated entropy source. |
 
 ## Contents
 
-[Overview](#overview) | [Quick terminology](#terminology) | [Development](#development) | [ED 1 results](#ed1results) | [ED 2 circuit](#ed2circuit) | [ED 3 enclosure](#ed3enclosure) | [Hardware photographs](#photographs) | [Repository guide](#repositoryguide) | [Reproducing the analysis](#analysis) | [Collecting new data](#collection) | [Bitstream Art](#art) | [Limits](#limits) | [Next work](#nextwork) | [Licence](#licence)
+[Overview](#overview) | [Quick terminology](#terminology) | [Development](#development) | [ED 1 results](#ed1results) | [ED 2 circuit](#ed2circuit) | [ED 3 circuit](#ed3circuit) | [ED 4 enclosure](#ed4enclosure) | [Hardware photographs](#photographs) | [Repository guide](#repositoryguide) | [Reproducing the analysis](#analysis) | [Collecting new data](#collection) | [Bitstream Art](#art) | [Limits](#limits) | [Next work](#nextwork) | [Licence](#licence)
 
 <a id="overview"></a>
 ## Overview
 
-The project has progressed through three experimental demonstrators.
+The project is organised into four experimental demonstrators.
 
 | Stage | Purpose | Current state |
 |---|---|---|
 | **ED-1** | Prove that the full path from circuit to saved data and analysis could work | Complete and preserved |
-| **ED-2** | Improve the analogue path, circuit record and acquisition process | Built and producing ADC readings |
-| **ED-3** | Move the circuit to perfboard and place it in a stable enclosure | CAD complete, physical assembly pending |
+| **ED-2** | Explore a documented two-stage analogue path and acquisition process | Preserved as a breadboard development stage; reference loading found during bring-up |
+| **ED-3** | Test a simpler circuit with a buffered reference and one signal-gain stage | Design documented; assembly and validation pending |
+| **ED-4** | Transfer a verified circuit to perfboard and place it in a stable enclosure | Enclosure printed and perfboard fit confirmed; electrical transfer pending ED-3 validation |
 
 The name QRNG describes the research direction. The present evidence supports an experimental physical entropy source, not a certified quantum random number generator or a source suitable for cryptographic use.
 
@@ -61,9 +62,9 @@ In April 2026, ED-1 became the first complete demonstrator. It produced a saved 
 > [!IMPORTANT]
 > The first result looked promising because the extracted bits were close to balanced. A later audit showed that the raw ADC sequence contained strong correlation and a repeating component. This did not make ED-1 useless. It made ED-1 a clear baseline and showed what the next version needed to improve.
 
-ED-2 kept the original LED source idea but added a defined midpoint reference, two amplifier stages, clearer bias paths, supply decoupling, output protection and a separate collection status indicator. The build also gained a complete breadboard record and a collector that writes timestamps and metadata.
+ED-2 kept the original LED source idea but added a defined midpoint reference, two amplifier stages, clearer bias paths, supply decoupling and output protection. During systematic bring-up, the Stage A reference branch pulled the unbuffered midpoint from approximately 2.5 V to approximately 1.3 V. That result is preserved as part of the engineering record rather than presented as a validated improvement.
 
-ED-3 takes the next mechanical step. It is designed around an 89 by 52 mm perfboard, a removable enclosure and a five wire connection to the Arduino. The circuit still needs to be transferred and tested inside the enclosure before ED-3 can be described as an operating demonstrator.
+ED-3 starts again with a simpler topology. One LM358 section buffers the midpoint reference and the other provides a single signal-gain stage. ED-4 is the later mechanical stage: an 89 by 52 mm perfboard and removable enclosure after ED-3 has passed electrical and data checks. The ED-4 shell has now been printed and the bare perfboard has passed its first physical fit check.
 
 <a id="ed1results"></a>
 ## ED 1 results
@@ -104,12 +105,26 @@ ED-2 uses the following signal path:
 
 The exact component values, breadboard positions, expected voltages and assembly order are documented in [`circuit.md`](circuit.md). The matching sampler is stored at [`firmware/ED-2/entropy_sampler_ed2.ino`](firmware/ED-2/entropy_sampler_ed2.ino).
 
-ED-2 has produced live ADC readings, but it does not yet have a published validation dataset. Its performance will be measured directly rather than inferred from ED-1.
+ED-2 produced live ADC readings, but systematic probing exposed reference loading in the assembled topology. It has no published validation dataset and is retained as a development stage rather than a verified source.
 
-<a id="ed3enclosure"></a>
-## ED 3 enclosure
+<a id="ed3circuit"></a>
+## ED 3 circuit
 
-The ED-3 case is a two part parametric design for the planned perfboard build.
+ED-3 uses a buffered midpoint reference and one signal amplifier. The reduced
+topology removes the second signal-gain stage and prevents the gain network from
+directly loading the 10 kOhm midpoint divider.
+
+The proposed component values, electrical netlist and staged bring-up sequence
+are documented in [`hardware/ED-3/circuit.md`](hardware/ED-3/circuit.md). The
+matching sampler is stored at
+[`firmware/ED-3/entropy_sampler_ed3.ino`](firmware/ED-3/entropy_sampler_ed3.ino).
+ED-3 will not be described as working until its reference, amplifier baseline,
+source controls and repeat captures have been checked.
+
+<a id="ed4enclosure"></a>
+## ED 4 enclosure
+
+The ED-4 case is a two part parametric design for the planned perfboard build. The base has been printed successfully, and the intended 89 by 52 mm perfboard fits between the locating features. This confirms the initial board envelope only; it does not yet confirm component clearance, cable routing or electrical operation.
 
 | Dimension | Value |
 |---|---:|
@@ -120,21 +135,26 @@ The ED-3 case is a two part parametric design for the planned perfboard build.
 | Clearance above the board | approximately 24.4 mm |
 | Cable opening | 26 by 12 mm |
 
-The cable opening carries five Arduino connections: 5 V, 3.3 V, GND, A0 and D7. Arduino AREF remains unconnected.
+The cable opening accommodates the currently planned Arduino connections: 5 V, 3.3 V, GND and A0. Arduino AREF remains unconnected.
 
-The editable source, printable files, dimensions and print guidance are available in the [ED-3 CAD directory](hardware/ED-3/cad/README.md).
+The editable source, printable files, dimensions and print guidance are available in the [ED-4 CAD directory](hardware/ED-4/cad/README.md).
+
+| Printed ED-4 enclosure base | Initial perfboard fit check |
+|:---:|:---:|
+| ![Printed ED-4 enclosure base](hardware/ED-4/photos/ed4-printed-enclosure.jpeg) | ![Unpopulated perfboard fitted inside the ED-4 enclosure](hardware/ED-4/photos/ed4-perfboard-fit-check.jpeg) |
+| The first physical print of the enclosure base and internal locating features. | The intended 89 by 52 mm perfboard seated in the printed base before component transfer. |
 
 <a id="photographs"></a>
 ## Hardware photographs
 
-The photographs keep ED-1 and ED-2 visually separate so their wiring cannot be mistaken for the same circuit revision.
+The photographs keep the demonstrators visually separate so their wiring and mechanical progress cannot be mistaken for the same revision.
 
 | ED-1 first demonstrator | ED-2 improved breadboard |
 |---|---|
-| ![Top view of ED-1](hardware/ED-1/photos/ed1-breadboard-overview.jpeg) | ![Top view of ED-2](hardware/ED-2/photos/ed2-breadboard-overview.jpeg) |
-| Original breadboard used for the first complete acquisition and analysis path. | Later breadboard with the revised analogue arrangement and status indicator. |
+| ![Top view of ED-1](hardware/ED-1/photos/ed1-breadboard-overview.jpeg) | ![Current ED-2 breadboard and Arduino overview](hardware/ED-2/photos/ed2-current-system-overview.jpeg) |
+| Original breadboard used for the first complete acquisition and analysis path. | Wider view of the latest documented ED-2 breadboard with its Arduino connection. |
 
-Additional views and captions are stored in the [ED-1 hardware notes](hardware/ED-1/README.md) and [ED-2 hardware notes](hardware/ED-2/README.md).
+Additional views and captions are stored in the [ED-1 hardware notes](hardware/ED-1/README.md), [ED-2 hardware notes](hardware/ED-2/README.md) and [ED-4 enclosure notes](hardware/ED-4/README.md).
 
 <a id="repositoryguide"></a>
 ## Repository guide
@@ -146,7 +166,7 @@ Additional views and captions are stored in the [ED-1 hardware notes](hardware/E
 | [`docs/`](docs/development-log.md) | Development history, theory, limits, safety and validation plans |
 | [`figures/ED-1/`](figures/ED-1/) | Figures generated from the April 2026 capture |
 | [`firmware/`](firmware/README.md) | Arduino samplers separated by demonstrator |
-| [`hardware/`](hardware/README.md) | Photographs, build records, metadata templates and ED-3 CAD |
+| [`hardware/`](hardware/README.md) | Photographs, build records, the ED-3 circuit and ED-4 CAD |
 | [`results/`](results/README.md) | The ED-1 audit and exploratory statistical output |
 | [`software/`](software/) | Collection, analysis, comparison and extraction tools |
 | [`tests/`](tests/) | Data, link, asset, analysis and CAD integrity tests |
@@ -178,13 +198,13 @@ The exploratory NIST wrapper requires a separately installed NIST STS executable
 <a id="collection"></a>
 ## Collecting new data
 
-Upload the ED-2 sampler, confirm the serial port and run:
+After ED-3 passes bring-up, upload the ED-3 sampler, confirm the serial port and run:
 
 ```bash
 python software/collector.py --port COM3 --samples 1000000
 ```
 
-Replace `COM3` with the port used by the Arduino. The collector writes a new timestamped CSV and a JSON metadata file under `data/ED-2/runs/`. A capture should not be published until the circuit values, firmware version, conditions and file hash have been recorded.
+Replace `COM3` with the port used by the Arduino. The collector writes a new timestamped CSV and a JSON metadata file under `data/ED-3/runs/`. A capture should not be published until the circuit values, firmware version, conditions and file hash have been recorded.
 
 <a id="art"></a>
 ## Bitstream Art
@@ -198,7 +218,7 @@ The images and reproducible source code are available in the [`art` gallery](art
 <a id="limits"></a>
 ## Limits
 
-The project has not yet isolated the contribution of the LED from amplifier noise, converter behaviour, supply movement or environmental interference. ED-1 represents one capture, while ED-2 still needs a controlled data campaign.
+The project has not yet isolated the contribution of the LED from amplifier noise, converter behaviour, supply movement or environmental interference. ED-1 represents one capture, ED-2 exposed a reference-loading problem, and ED-3 still needs assembly and controlled testing.
 
 > [!CAUTION]
 > No output from this repository should be used for cryptographic keys, authentication, gambling, financial decisions or safety critical systems.
@@ -208,12 +228,12 @@ Read [`docs/limitations.md`](docs/limitations.md), [`docs/safety.md`](docs/safet
 <a id="nextwork"></a>
 ## Next work
 
-1. Transfer the ED-2 circuit to the ED-3 perfboard.
-2. Print the ED-3 base and lid and check the physical fit.
-3. Record the final component values, supply voltages and build photographs.
-4. Capture ED-2 and ED-3 control datasets across independent restarts.
-5. Compare their raw signal structure, bias, correlation and stability with ED-1.
-6. Establish a conservative entropy estimate before introducing conditioning.
+1. Assemble ED-3 in tested stages, beginning with the buffered reference.
+2. Record the final component values, node checks and build photographs.
+3. Capture ED-3 controls and source runs across independent restarts.
+4. Compare its raw signal structure, bias, correlation and stability with ED-1.
+5. Establish a conservative entropy estimate before introducing conditioning.
+6. Transfer only a verified topology to the ED-4 perfboard and enclosure.
 
 <a id="licence"></a>
 ## Licence

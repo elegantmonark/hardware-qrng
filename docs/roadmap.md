@@ -35,14 +35,17 @@ This is a living checklist rather than a deadline schedule. A task is complete o
 - [ ] Choose and document an operating point.
 - [ ] Establish whether signal changes follow the physical model.
 
-## 5. Characterise the ED-2 analogue path
+## 5. Build and characterise the ED-3 analogue path
 
+- [ ] Build and verify the raw midpoint reference.
+- [ ] Add the LM358 voltage follower and confirm that the buffered reference remains stable under load.
+- [ ] Add the single signal amplifier and verify its baseline before connecting the LED source.
 - [ ] Check LM358 input common mode range, output swing, offset, and the effects of bias current.
 - [ ] Calculate and measure gain and bandwidth.
 - [ ] Check for clipping, saturation, oscillation, and rail/reference movement.
 - [ ] Record any change from the current topology as a new circuit revision.
 
-## 6. Collect the ED-2 campaign
+## 6. Collect the ED-3 campaign
 
 - [x] Add timestamped filenames and automatic JSON metadata to the collector.
 - [ ] Collect all controls specified in `experiment-plan.md`.
@@ -66,14 +69,14 @@ This is a living checklist rather than a deadline schedule. A task is complete o
 - [ ] Stop or quarantine output after a detected source failure.
 - [ ] Select a conditioner only after the supported input entropy is known.
 
-## 9. Build ED-3
+## 9. Build ED-4
 
-- [ ] Use the printed shell as a fit prototype and record changes.
-- [ ] Add CAD renders and photographs of the printed ED-3 shell.
-- [ ] Transfer the verified ED-2 topology to perfboard.
+- [x] Use the printed shell as a fit prototype and confirm the bare perfboard envelope.
+- [x] Add photographs of the printed ED-4 shell and initial perfboard fit check.
+- [ ] Transfer the verified ED-3 topology to perfboard.
 - [ ] Keep analogue wiring short and separated from digital wiring.
 - [ ] Add labelled leads, test points, strain relief, and safe clearances.
-- [ ] Photograph and document the completed ED-3 assembly.
+- [ ] Photograph and document the completed ED-4 assembly.
 - [ ] Repeat key controls after the transfer.
 
 ## 10. Characterise enclosure effects

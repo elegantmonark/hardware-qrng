@@ -1,3 +1,5 @@
 # ED-3 photographs
 
-Add enclosure renders, photographs of the printed shell, and later photographs of the assembled build here. Captions should distinguish CAD concepts, empty enclosure prototypes, partial assemblies, and electrically validated complete builds.
+Add photographs only after the simplified breadboard has been assembled and its
+connections have been checked. Record the date, circuit revision and whether the
+pictured configuration produced a retained dataset.

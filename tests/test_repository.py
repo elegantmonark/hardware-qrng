@@ -32,7 +32,7 @@ class RepositoryTests(unittest.TestCase):
         self.assert_hash_manifest(ROOT / "data" / "ED-1")
 
     def test_cad_export_hashes(self) -> None:
-        self.assert_hash_manifest(ROOT / "hardware" / "ED-3" / "cad")
+        self.assert_hash_manifest(ROOT / "hardware" / "ED-4" / "cad")
 
     def test_local_markdown_links_exist(self) -> None:
         pattern = re.compile(r"!?\[[^]]*\]\(([^)]+)\)")
@@ -67,6 +67,10 @@ class RepositoryTests(unittest.TestCase):
             "hardware/ED-1/photos/ed1-analogue-stage-closeup.jpeg",
             "hardware/ED-2/photos/ed2-breadboard-overview.jpeg",
             "hardware/ED-2/photos/ed2-analogue-stage-closeup.jpeg",
+            "hardware/ED-2/photos/ed2-current-breadboard-closeup.jpeg",
+            "hardware/ED-2/photos/ed2-current-system-overview.jpeg",
+            "hardware/ED-4/photos/ed4-printed-enclosure.jpeg",
+            "hardware/ED-4/photos/ed4-perfboard-fit-check.jpeg",
         )
         for relative_path in expected_photos:
             path = ROOT / relative_path
