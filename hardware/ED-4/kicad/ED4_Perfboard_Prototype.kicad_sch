@@ -1,0 +1,4085 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "dcd46970-7006-4124-8ec2-2e1129078b4f")
+	(paper "A4")
+	(title_block
+		(title "ED-4 QRNG Perfboard Prototype")
+		(date "2026-10-22")
+		(rev "DRAFT 2")
+		(company "Trishan Biswas")
+		(comment 1 "Connected engineering schematic for the ED-4 perfboard layout")
+		(comment 2 "Verify component values and staged measurements before assembly")
+		(comment 3 "Arduino AREF remains disconnected")
+	)
+	(lib_symbols
+		(symbol "Amplifier_Operational:LM2904"
+			(pin_names
+				(offset 0.127)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 5.08 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LM2904"
+				(at 0 -5.08 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm358.pdf"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "dual opamp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LM2904_1_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "LM2904_2_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "LM2904_3_1"
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector:TestPoint"
+			(pin_names
+				(offset 0.762)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector_Generic:Conn_01x04"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x04"
+				(at 0 -7.62 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x04_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C_Polarized"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:LED"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "Arduino AREF is intentionally disconnected. Verify rails before connecting A0."
+		(exclude_from_sim no)
+		(at 145 173 0)
+		(effects
+			(font
+				(size 0.95 0.95)
+			)
+		)
+		(uuid "25068001-74ef-4fc1-bcfb-ec4c771a4685")
+	)
+	(text "D1 cathode connects to SOURCE_NODE; its anode connects to GND."
+		(exclude_from_sim no)
+		(at 145 168 0)
+		(effects
+			(font
+				(size 0.95 0.95)
+			)
+		)
+		(uuid "45c54a2d-e184-4211-a72e-08793d20562c")
+	)
+	(text "BRING-UP TEST POINTS"
+		(exclude_from_sim no)
+		(at 40 140 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+				(bold yes)
+			)
+		)
+		(uuid "48f901d8-6d9e-4e25-a913-bff11eb02e49")
+	)
+	(text "ED-4 QRNG PERFBOARD PROTOTYPE"
+		(exclude_from_sim no)
+		(at 145 16 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+			)
+		)
+		(uuid "79335aaf-dfae-487e-bd8b-3bc1492d2606")
+	)
+	(text "SIGNAL GAIN AND ADC OUTPUT"
+		(exclude_from_sim no)
+		(at 164 84 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+				(bold yes)
+			)
+		)
+		(uuid "ab7831c3-8a95-4170-b087-a425de777750")
+	)
+	(text "MIDPOINT REFERENCE AND BUFFER"
+		(exclude_from_sim no)
+		(at 95 29 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+				(bold yes)
+			)
+		)
+		(uuid "b4a0f507-6063-49b3-b891-e02c69feddf1")
+	)
+	(text "OP AMP POWER"
+		(exclude_from_sim no)
+		(at 169 29 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+				(bold yes)
+			)
+		)
+		(uuid "bde3d3d3-a613-4d9d-870b-2ed949996503")
+	)
+	(text "Buffered reference, reverse-biased LED source and AC-coupled gain stage"
+		(exclude_from_sim no)
+		(at 145 21 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "c601ecb3-5bed-4522-85c3-1cffd9302390")
+	)
+	(text "LED ENTROPY SOURCE AND AC COUPLING"
+		(exclude_from_sim no)
+		(at 75 84 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+				(bold yes)
+			)
+		)
+		(uuid "c8a20816-7011-4272-94e3-0fd313af6e71")
+	)
+	(text "Nominal U1B gain about VREF: 1 + 330 kOhm / 4.4 kOhm = 76."
+		(exclude_from_sim no)
+		(at 145 163 0)
+		(effects
+			(font
+				(size 0.95 0.95)
+			)
+		)
+		(uuid "e1b3dcfb-3849-48f3-aaf4-92bfe5450011")
+	)
+	(text "ARDUINO INTERFACE"
+		(exclude_from_sim no)
+		(at 34 29 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+				(bold yes)
+			)
+		)
+		(uuid "f8b7439b-8ff2-4797-87ba-382013907e77")
+	)
+	(junction
+		(at 85.09 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16961b2e-4690-4f3a-ba2c-0c75296203fc")
+	)
+	(junction
+		(at 99.06 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "654e3e65-91b8-4748-abe1-dcd184d1d82e")
+	)
+	(junction
+		(at 151.13 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75bc01d4-b9f4-4543-b3e2-f83975a2002e")
+	)
+	(junction
+		(at 69.85 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7810d6aa-9f2d-496e-ba1c-493d3072a4fc")
+	)
+	(junction
+		(at 66.04 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c586497c-00e6-43d4-8f48-6a58e5368faf")
+	)
+	(junction
+		(at 85.09 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e016ac80-f1c6-4dfb-a7c9-ab809cc0a5d4")
+	)
+	(junction
+		(at 182.88 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f1f32ce8-70cc-4e64-8c6b-1226fb8a6e96")
+	)
+	(wire
+		(pts
+			(xy 166.37 101.6) (xy 191.77 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00d7318e-034e-4a9d-a908-0cfe34d43ca8")
+	)
+	(wire
+		(pts
+			(xy 99.06 101.6) (xy 99.06 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07fcc993-32a8-4dce-956f-76e2698efa6d")
+	)
+	(wire
+		(pts
+			(xy 97.79 60.96) (xy 97.79 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0df1d4b6-c023-4fb9-aed0-c021721694de")
+	)
+	(wire
+		(pts
+			(xy 157.48 55.88) (xy 157.48 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f1a5028-b40c-4398-86a2-6db7ab82fb78")
+	)
+	(wire
+		(pts
+			(xy 118.11 50.8) (xy 124.46 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "124b72a8-ec9b-4384-a938-84e2bb655ae7")
+	)
+	(wire
+		(pts
+			(xy 139.7 101.6) (xy 139.7 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1423fc46-b607-4426-ae71-92a5bff8b783")
+	)
+	(wire
+		(pts
+			(xy 69.85 36.83) (xy 69.85 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b368508-4c3e-4027-8380-87c96c6a751c")
+	)
+	(wire
+		(pts
+			(xy 182.88 121.92) (xy 179.07 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cfdfae7-8584-4a27-b47d-e99713fd2e31")
+	)
+	(wire
+		(pts
+			(xy 88.9 101.6) (xy 139.7 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e8dada1-1e0d-48f0-be90-4406cf88de38")
+	)
+	(wire
+		(pts
+			(xy 199.39 101.6) (xy 207.01 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2187ff12-cfdd-4740-a05c-f1bab682e2e4")
+	)
+	(wire
+		(pts
+			(xy 99.06 120.65) (xy 99.06 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "231098b8-db77-4e0a-a645-481321d5161b")
+	)
+	(wire
+		(pts
+			(xy 29.21 50.8) (xy 35.56 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2689f202-374d-4030-a2a9-c8d7f2f8dc49")
+	)
+	(wire
+		(pts
+			(xy 59.69 101.6) (xy 81.28 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2695b6a6-7dc4-4545-912a-2ed15738f536")
+	)
+	(wire
+		(pts
+			(xy 184.15 44.45) (xy 184.15 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37801fac-baeb-4c8e-ba8b-7e539a3da446")
+	)
+	(wire
+		(pts
+			(xy 44.45 101.6) (xy 52.07 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d6920f7-759f-4c5a-8160-827c3c1ad759")
+	)
+	(wire
+		(pts
+			(xy 137.16 121.92) (xy 130.81 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "461a07fe-848b-46f3-b361-068d7e3d2410")
+	)
+	(wire
+		(pts
+			(xy 182.88 101.6) (xy 182.88 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "510379a9-e8c2-4e51-b220-3cc53c3f0b87")
+	)
+	(wire
+		(pts
+			(xy 29.21 45.72) (xy 35.56 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "522f3c98-584b-4849-a40c-db417feab12c")
+	)
+	(wire
+		(pts
+			(xy 69.85 48.26) (xy 102.87 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "646b4acf-91db-4ef9-acd5-10620793d988")
+	)
+	(wire
+		(pts
+			(xy 151.13 121.92) (xy 144.78 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "713f3b2b-1492-46b9-beb3-2850a8aaa7f0")
+	)
+	(wire
+		(pts
+			(xy 151.13 104.14) (xy 151.13 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a3d3c3b-fb5c-4cc9-a7bb-6505f444f540")
+	)
+	(wire
+		(pts
+			(xy 151.13 121.92) (xy 171.45 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ef729c2-3466-43e4-9c99-120a7f518f6a")
+	)
+	(wire
+		(pts
+			(xy 66.04 109.22) (xy 66.04 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac29e225-2598-4db4-b55a-15719b36edc8")
+	)
+	(wire
+		(pts
+			(xy 69.85 55.88) (xy 85.09 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b076b130-3163-4952-9c03-f6afc5b44140")
+	)
+	(wire
+		(pts
+			(xy 139.7 99.06) (xy 151.13 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2195951-6d4c-4108-9bba-27fb04c83699")
+	)
+	(wire
+		(pts
+			(xy 184.15 52.07) (xy 184.15 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b21be159-0a56-4ab1-ad88-2c7d1b64aac3")
+	)
+	(wire
+		(pts
+			(xy 124.46 50.8) (xy 124.46 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8015c28-ba43-4d34-9f17-d97d76eb0154")
+	)
+	(wire
+		(pts
+			(xy 85.09 55.88) (xy 92.71 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6353df9-9e43-43ea-86ef-94aca3c92e00")
+	)
+	(wire
+		(pts
+			(xy 157.48 40.64) (xy 157.48 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d760f59b-617f-4993-8a90-7b3bdf7cbf61")
+	)
+	(wire
+		(pts
+			(xy 97.79 53.34) (xy 102.87 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e98956f3-6460-4cb0-9c99-9cc495c61a35")
+	)
+	(wire
+		(pts
+			(xy 29.21 48.26) (xy 35.56 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea3133f8-44e8-47e9-848c-7d8b89c70f4e")
+	)
+	(wire
+		(pts
+			(xy 69.85 44.45) (xy 69.85 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f44c62af-95e4-4d3b-a401-f0a5a124fef1")
+	)
+	(wire
+		(pts
+			(xy 29.21 43.18) (xy 35.56 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7420a1f-6293-46de-99d3-712044df2f2b")
+	)
+	(wire
+		(pts
+			(xy 124.46 60.96) (xy 97.79 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fafc5382-ee2a-4cb7-ad29-dbbae173f0a5")
+	)
+	(label "+5V"
+		(at 184.15 39.37 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "0424665b-d2ba-4cc8-af64-2ca1a3d69ab9")
+	)
+	(label "GND"
+		(at 184.15 57.15 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "0b06949f-b780-4aef-a89d-f0c737fc90b2")
+	)
+	(label "+3V3"
+		(at 44.45 101.6 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "14bb24b2-3911-46c6-a67f-e7da05ae9e99")
+	)
+	(label "+5V"
+		(at 69.85 33.02 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "1a7af4ac-ce6d-422c-8f03-9336fa3ab818")
+	)
+	(label "AMP_OUT"
+		(at 179.07 148.59 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "23ee35ba-27ac-4333-bb26-1ce876bc76b2")
+	)
+	(label "+5V"
+		(at 29.21 43.18 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "3e71348f-2ccb-41ba-af07-00a70e8ee581")
+	)
+	(label "GND"
+		(at 226.06 148.59 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "41dca25a-5266-422b-97be-fdeffad75a6d")
+	)
+	(label "+3V3"
+		(at 29.21 45.72 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "446b35a5-b80d-41f9-99f3-3c9e3fe37078")
+	)
+	(label "GND"
+		(at 220.98 40.64 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "47788f1e-7a41-4d04-8321-4c4c61e90ca8")
+	)
+	(label "SIGNAL_INPUT"
+		(at 113.03 101.6 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "51d10e57-44cc-4f31-87ff-d42a332e64a3")
+	)
+	(label "+5V"
+		(at 157.48 35.56 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "5a0d58fc-b354-448d-996b-31f852b4b5b4")
+	)
+	(label "+5V"
+		(at 207.01 40.64 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "5efc342a-112a-4961-8fc4-4d1886124208")
+	)
+	(label "A0"
+		(at 207.01 101.6 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "73cda96f-6312-4746-a83d-ae457aa01b02")
+	)
+	(label "A0"
+		(at 29.21 50.8 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "7a98bdbe-c437-4ee5-8343-346febc41c8d")
+	)
+	(label "VREF_BUFFERED"
+		(at 82.55 148.59 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "80b6386b-0db1-4850-ac4d-711cb47332f0")
+	)
+	(label "GND"
+		(at 92.71 55.88 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "811d5983-9f76-48ab-8364-7e30e473ff31")
+	)
+	(label "AMP_OUT"
+		(at 175.26 101.6 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "8217fb49-38f0-4b3e-8608-0e12eaa0c6a3")
+	)
+	(label "GND"
+		(at 29.21 48.26 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "991edfea-7022-494d-b1e5-62a42f907c55")
+	)
+	(label "GND"
+		(at 66.04 115.57 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "a6a9ca74-31fa-4eed-87bc-f3249c32f286")
+	)
+	(label "A0"
+		(at 203.2 148.59 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "c8b48fd5-d848-4382-b658-dcb02f49be32")
+	)
+	(label "VREF_BUFFERED"
+		(at 130.81 121.92 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "cd26eb9b-245a-43d2-b796-6a6a6937b654")
+	)
+	(label "VREF_BUFFERED"
+		(at 99.06 125.73 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "cd5c8529-afc2-41cd-a8a3-def52cbcd921")
+	)
+	(label "VREF_RAW"
+		(at 52.07 148.59 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "d0b0089b-b1c7-4f98-a25b-94cfe96c32db")
+	)
+	(label "SOURCE_NODE"
+		(at 116.84 148.59 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "d4d12670-73b2-44f8-8bbd-2f563645594b")
+	)
+	(label "FEEDBACK"
+		(at 153.67 121.92 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "d66fd098-2095-434c-8aca-da7ac4ffcd3e")
+	)
+	(label "VREF_BUFFERED"
+		(at 124.46 50.8 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "dfa19c91-74e0-457f-97c6-7cc3e508f8de")
+	)
+	(label "VREF_RAW"
+		(at 91.44 48.26 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "e6b96d4c-8db8-4866-a153-13963162c4cc")
+	)
+	(label "GND"
+		(at 157.48 60.96 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "e93d0447-680c-4f7f-b9c6-90702e467578")
+	)
+	(label "SIGNAL_INPUT"
+		(at 149.86 148.59 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "f0b09c4c-8262-4e0d-b791-fe07afd946ae")
+	)
+	(label "SOURCE_NODE"
+		(at 68.58 101.6 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+		)
+		(uuid "fe0fb4b3-34df-4504-9d92-ebe0157f81bc")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 140.97 121.92 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0a79c2ab-b399-4041-b231-c42abfc3f364")
+		(property "Reference" "RG"
+			(at 140.97 118.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "4.4 kOhm"
+			(at 140.97 124.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 140.97 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 140.97 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "72314f83-a966-4bad-a16d-eea448c7adb0")
+		)
+		(pin "2"
+			(uuid "86b70f53-128a-419e-9a10-02cc5cd8e98b")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "RG")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 55.88 101.6 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0e5bae29-ac89-441d-af9a-87e7f3b294c8")
+		(property "Reference" "RLED"
+			(at 55.88 98.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "10 MOhm"
+			(at 55.88 104.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 55.88 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 55.88 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "75444928-bbbf-4663-bf3d-120e86c693f7")
+		)
+		(pin "2"
+			(uuid "e32e733b-8a20-43f1-bd93-dbb1e989e81d")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "RLED")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 149.86 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "188edd87-dd18-4f8d-ad04-59953b2e045d")
+		(property "Reference" "TP4"
+			(at 149.86 143.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "SIGNAL_INPUT"
+			(at 149.86 154.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 149.86 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 149.86 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8fd215e2-923b-4a75-bf02-9017e4e95835")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 195.58 101.6 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1f3b9f35-969e-4c64-abbe-5f77de268bdd")
+		(property "Reference" "ROUT"
+			(at 195.58 98.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "690 Ohm"
+			(at 195.58 104.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 195.58 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 195.58 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3133c093-765e-4c06-abcb-e5c404f09948")
+		)
+		(pin "2"
+			(uuid "0cca8750-06d1-4213-bc87-6623fb0e0671")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "ROUT")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 207.01 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2cc5b77a-c6d4-4484-b9fc-f90eb0fe46d8")
+		(property "Reference" "#FLG01"
+			(at 207.01 35.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 207.01 46.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 207.01 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.01 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 207.01 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8a7fabd2-e6bb-4961-ad93-dea1d1bd9b32")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 69.85 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2da7d405-5b99-49a8-859c-5137eaa37896")
+		(property "Reference" "R1"
+			(at 74.25 39.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "10 kOhm"
+			(at 74.25 42.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 69.85 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 69.85 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e1ee42c6-0733-4d7d-9b5d-de1fff304b7d")
+		)
+		(pin "2"
+			(uuid "2d45666c-4d2d-4dca-b71c-520a1adcd1ba")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 226.06 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2eec2119-11f3-4b37-a7f8-86d2fc5233fc")
+		(property "Reference" "TP7"
+			(at 226.06 143.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 226.06 154.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 226.06 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 226.06 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "880008ba-3f8a-4ae3-a754-8bc55e9ab1ac")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 69.85 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "33a506ee-e2d2-4038-ab97-fd42659f5628")
+		(property "Reference" "R2"
+			(at 74.25 50.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "10 kOhm"
+			(at 74.25 53.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 69.85 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 69.85 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "14ca1731-9089-49de-b57a-48be2cf25203")
+		)
+		(pin "2"
+			(uuid "4e0f1621-7d23-441e-a92f-8a3140013bda")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 203.2 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3f45ae54-6253-4b15-bd65-898112f11c88")
+		(property "Reference" "TP6"
+			(at 203.2 143.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "A0"
+			(at 203.2 154.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 203.2 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 203.2 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dd1c7266-a7b2-4309-87cf-fc7c046b06cd")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 85.09 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5749bd5e-cf3b-4da9-b23b-062fdd832e43")
+		(property "Reference" "CREF"
+			(at 89.49 50.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "10 uF"
+			(at 89.49 53.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
+			(at 85.09 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 85.09 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2a3c1d36-6c4f-4f82-b6bb-0dceb594af31")
+		)
+		(pin "2"
+			(uuid "f452a329-51b3-4ed6-a27c-2f76dd57b095")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "CREF")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 85.09 101.6 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "57d9e832-6810-4186-9a8b-5f2d2f3f3d87")
+		(property "Reference" "CIN"
+			(at 85.09 98.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "100 nF"
+			(at 85.09 104.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+			(at 85.09 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 85.09 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8f75d4b6-2586-4e6b-98b4-37264a65ae4c")
+		)
+		(pin "2"
+			(uuid "6d584981-92aa-4649-bf8f-26bd27845a61")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "CIN")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 179.07 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7a981380-caff-49ea-a380-1c8afb26cbb5")
+		(property "Reference" "TP5"
+			(at 179.07 143.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "AMP_OUT"
+			(at 179.07 154.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 179.07 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 179.07 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "73ec3775-f37c-4e00-b2c8-e9397d9232aa")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:LM2904")
+		(at 158.75 101.6 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "94135a7e-ff06-48fb-86bb-97e2cd42fec9")
+		(property "Reference" "U1"
+			(at 158.75 96.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "LM358N"
+			(at 158.75 107.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 158.75 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 158.75 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "fd68b9f7-526d-483d-b8c0-c94dbc270297")
+		)
+		(pin "6"
+			(uuid "5dee0cf1-39a4-47b2-aac6-5db768a75674")
+		)
+		(pin "7"
+			(uuid "e5950f2b-fded-4d2f-9ce7-3a36f1f68537")
+		)
+		(pin "2"
+			(uuid "fea752c7-01d1-4e61-a391-11838bf8e837")
+		)
+		(pin "3"
+			(uuid "b0e2d095-62a6-49f3-ae74-2b17a807c6d1")
+		)
+		(pin "1"
+			(uuid "0644cbbe-b9f8-412b-8bfe-abfaddb3f2f9")
+		)
+		(pin "4"
+			(uuid "6c003036-6cd5-4e0d-8201-ee22a2b717d5")
+		)
+		(pin "8"
+			(uuid "0606559a-1157-4190-8f91-ac899fc8a2f5")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "U1")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 82.55 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "967433c4-a565-4f79-a801-70455d9c0c3d")
+		(property "Reference" "TP2"
+			(at 82.55 143.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "VREF_BUFFERED"
+			(at 82.55 154.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 82.55 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 82.55 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f2782408-96fe-4103-9572-1763f6c3e53f")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 99.06 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "975185d4-9a7c-4312-a1aa-d2158a2a3ef4")
+		(property "Reference" "RBIAS"
+			(at 103.46 115.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "330 kOhm"
+			(at 103.46 118.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 99.06 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 99.06 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9f191bcd-1e3a-4224-af8b-198de66bbf28")
+		)
+		(pin "2"
+			(uuid "9ce1d602-ba9a-4a6c-b330-6b0948d46f35")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "RBIAS")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:LM2904")
+		(at 160.02 48.26 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a3135118-ecd3-447d-a21a-7aa59efcc97c")
+		(property "Reference" "U1"
+			(at 160.02 42.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "LM358N"
+			(at 160.02 53.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 160.02 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 160.02 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "91529142-8b63-45ba-9b40-5840df117624")
+		)
+		(pin "8"
+			(uuid "06df24a6-2747-4d14-9acc-cef616e49c2b")
+		)
+		(pin "3"
+			(uuid "08dd42c1-814a-48a4-a4ba-969868117bd4")
+		)
+		(pin "1"
+			(uuid "a38c3bf7-7f8a-4e1e-b4fb-1a9960e8d174")
+		)
+		(pin "2"
+			(uuid "a9587697-c46e-469c-98af-81b6a3e42b32")
+		)
+		(pin "5"
+			(uuid "df96ba7b-2189-40ac-8ecb-7c4861af1eb8")
+		)
+		(pin "7"
+			(uuid "4f5fa79e-2b57-4d50-8dcd-23be57aedd47")
+		)
+		(pin "6"
+			(uuid "e5ab1caa-ce93-487b-b8ff-3324fda7a8c5")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "U1")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 184.15 48.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a47cd63d-5cbe-40b5-8cc4-ccb44918995e")
+		(property "Reference" "CDEC"
+			(at 188.55 46.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "100 nF"
+			(at 188.55 49.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+			(at 184.15 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 184.15 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "10c7a480-9305-4e77-a3a3-ce5ecc48b9de")
+		)
+		(pin "2"
+			(uuid "4aa559c7-020f-43bc-99d5-09df44b7e148")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "CDEC")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 52.07 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ae03f119-00e5-4f0b-9710-ffa7586bfc29")
+		(property "Reference" "TP1"
+			(at 52.07 143.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "VREF_RAW"
+			(at 52.07 154.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 52.07 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 52.07 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3c401ebd-7406-43ee-8969-f73e55210201")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 66.04 105.41 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c077ef7c-6be9-4b52-aae8-fd02d6b21aab")
+		(property "Reference" "D1"
+			(at 66.04 102.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "GREEN LED"
+			(at 66.04 108.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D5.0mm"
+			(at 66.04 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 66.04 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0170869b-556b-4d7d-9b7f-a4949034f514")
+		)
+		(pin "2"
+			(uuid "1727823b-6fc7-4307-83bd-9f2f34ebe445")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 220.98 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c1b3f605-39cf-47a0-a7b7-7bcae6a20629")
+		(property "Reference" "#FLG02"
+			(at 220.98 35.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 220.98 46.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 220.98 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0445bcbc-b527-4008-b904-d0f400490c0b")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 40.64 45.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dc59ecdc-9159-4010-aa78-1d8aec953afb")
+		(property "Reference" "J1"
+			(at 40.64 40.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "ARDUINO"
+			(at 40.64 51.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 40.64 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 40.64 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a315bfeb-b5a6-43fc-9891-e1ab85ef425d")
+		)
+		(pin "2"
+			(uuid "58da485f-b041-42e9-9a73-f036a6b1cb64")
+		)
+		(pin "3"
+			(uuid "0de7aba3-c167-4c66-8eb2-884a5cbd6e06")
+		)
+		(pin "4"
+			(uuid "10b89c28-471d-432d-af6e-8fbb677f6585")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:LM2904")
+		(at 110.49 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e15980d8-4836-4b9f-9e44-1a3698002b0c")
+		(property "Reference" "U1"
+			(at 110.49 45.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "LM358N"
+			(at 110.49 56.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 110.49 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 110.49 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6083bb87-6d36-4af7-8edf-fae07a66c4ad")
+		)
+		(pin "2"
+			(uuid "7b939860-4cd3-44cd-9c8b-d7e351b52741")
+		)
+		(pin "3"
+			(uuid "3f708b44-1b22-40a6-b78d-51185767de02")
+		)
+		(pin "8"
+			(uuid "503d8734-71de-47e1-ac24-6de069f85371")
+		)
+		(pin "6"
+			(uuid "4155a669-7be1-4fac-a99c-578f839bcd6b")
+		)
+		(pin "4"
+			(uuid "ac6e1a40-d5b9-4c92-92ae-878c3d0ad9b8")
+		)
+		(pin "5"
+			(uuid "bf1c9f24-3638-44a6-b1e2-e2a6d42474e2")
+		)
+		(pin "7"
+			(uuid "0e572064-d572-4b21-b202-54361e726e41")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 175.26 121.92 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e815eb9a-32f5-422e-a808-421e99077f44")
+		(property "Reference" "RF"
+			(at 175.26 118.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "330 kOhm"
+			(at 175.26 124.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 175.26 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 175.26 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0dc313ed-a401-48d8-a918-67a02d35f566")
+		)
+		(pin "2"
+			(uuid "c5a16c78-07ba-4f8e-8fad-56757c0916e9")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "RF")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 116.84 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f94d9be5-f872-42ac-b54e-a59e82684276")
+		(property "Reference" "TP3"
+			(at 116.84 143.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "SOURCE_NODE"
+			(at 116.84 154.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 116.84 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ED-4 placement prototype component"
+			(at 116.84 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "95319325-8660-440d-bd67-b6ea7e9709b8")
+		)
+		(instances
+			(project "ED4_Perfboard_Prototype"
+				(path "/dcd46970-7006-4124-8ec2-2e1129078b4f"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

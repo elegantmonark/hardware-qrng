@@ -17,3 +17,13 @@ The board rests on raised rails and is located by edge guides, so the design doe
 | ![Printed ED-4 enclosure base](photos/ed4-printed-enclosure.jpeg) | ![Bare perfboard fitted in the ED-4 enclosure](photos/ed4-perfboard-fit-check.jpeg) |
 
 The photographs were taken on 18 October 2026 and show the first physical base with the unpopulated perfboard seated inside it. Component installation and electrical validation remain future work.
+
+## KiCad circuit and placement prototype
+
+An editable KiCad draft now documents the connected circuit and maps the proposed ED-3 parts and labelled bring-up test points onto the 89 by 52 mm perfboard. The schematic passes KiCad ERC with 0 errors and 0 warnings. This is still a prototype: permanent jumper and solder-side routing must wait until the ED-3 breadboard topology has passed its electrical and controlled-data checks.
+
+| Isometric placement render | Connected circuit schematic |
+|:---:|:---:|
+| ![ED-4 KiCad perfboard placement prototype](kicad/exports/ed4-perfboard-prototype-isometric.png) | ![ED-4 connected circuit schematic](kicad/exports/ed4-perfboard-prototype-schematic.png) |
+
+The native project, schematic, board file, scalable layout export, rules reports and generation notes are stored in the [`kicad/`](kicad/README.md) directory. The board remains a perfboard placement model rather than a routed manufacturing design.

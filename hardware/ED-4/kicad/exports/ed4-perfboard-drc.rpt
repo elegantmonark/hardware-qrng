@@ -1,0 +1,1183 @@
+** Drc report for ED4_Perfboard_Prototype.kicad_pcb **
+** Created on 2026-10-22T11:25:16 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 263 DRC violations **
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(82.2800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+    @(79.7400 mm, 26.9500 mm): Footprint RLED
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(84.8200 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+    @(79.7400 mm, 26.9500 mm): Footprint RLED
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(87.3600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+    @(79.7400 mm, 26.9500 mm): Footprint RLED
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+    @(46.7200 mm, 29.4900 mm): Footprint CREF
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(44.1800 mm, 29.4900 mm): PTH pad [<no net>] of GRID1
+    @(46.7200 mm, 29.4900 mm): Footprint CREF
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+    @(46.7200 mm, 29.4900 mm): Footprint CREF
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(49.2600 mm, 29.4900 mm): PTH pad [<no net>] of GRID1
+    @(46.7200 mm, 29.4900 mm): Footprint CREF
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(82.2800 mm, 62.5100 mm): PTH pad [<no net>] of GRID1
+    @(79.7400 mm, 62.5100 mm): Footprint RG
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(84.8200 mm, 62.5100 mm): PTH pad [<no net>] of GRID1
+    @(79.7400 mm, 62.5100 mm): Footprint RG
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(87.3600 mm, 62.5100 mm): PTH pad [<no net>] of GRID1
+    @(79.7400 mm, 62.5100 mm): Footprint RG
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(92.4400 mm, 32.0300 mm): PTH pad [<no net>] of GRID1
+    @(94.9800 mm, 34.5700 mm): Footprint D1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(92.4400 mm, 34.5700 mm): PTH pad [<no net>] of GRID1
+    @(94.9800 mm, 34.5700 mm): Footprint D1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(97.5200 mm, 32.0300 mm): PTH pad [<no net>] of GRID1
+    @(94.9800 mm, 34.5700 mm): Footprint D1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(97.5200 mm, 34.5700 mm): PTH pad [<no net>] of GRID1
+    @(94.9800 mm, 34.5700 mm): Footprint D1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(82.2800 mm, 54.8900 mm): PTH pad [<no net>] of GRID1
+    @(79.7400 mm, 54.8900 mm): Footprint RF
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(84.8200 mm, 54.8900 mm): PTH pad [<no net>] of GRID1
+    @(79.7400 mm, 54.8900 mm): Footprint RF
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(87.3600 mm, 54.8900 mm): PTH pad [<no net>] of GRID1
+    @(79.7400 mm, 54.8900 mm): Footprint RF
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(34.0200 mm, 59.9700 mm): PTH pad [<no net>] of GRID1
+    @(31.4800 mm, 59.9700 mm): Footprint ROUT
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(36.5600 mm, 59.9700 mm): PTH pad [<no net>] of GRID1
+    @(31.4800 mm, 59.9700 mm): Footprint ROUT
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(39.1000 mm, 59.9700 mm): PTH pad [<no net>] of GRID1
+    @(31.4800 mm, 59.9700 mm): Footprint ROUT
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(34.0200 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+    @(31.4800 mm, 26.9500 mm): Footprint R1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(36.5600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+    @(31.4800 mm, 26.9500 mm): Footprint R1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(39.1000 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+    @(31.4800 mm, 26.9500 mm): Footprint R1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(34.0200 mm, 39.6500 mm): PTH pad [<no net>] of GRID1
+    @(31.4800 mm, 39.6500 mm): Footprint R2
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(36.5600 mm, 39.6500 mm): PTH pad [<no net>] of GRID1
+    @(31.4800 mm, 39.6500 mm): Footprint R2
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(39.1000 mm, 39.6500 mm): PTH pad [<no net>] of GRID1
+    @(31.4800 mm, 39.6500 mm): Footprint R2
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(82.2800 mm, 47.2700 mm): PTH pad [<no net>] of GRID1
+    @(79.7400 mm, 47.2700 mm): Footprint RBIAS
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(84.8200 mm, 47.2700 mm): PTH pad [<no net>] of GRID1
+    @(79.7400 mm, 47.2700 mm): Footprint RBIAS
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(87.3600 mm, 47.2700 mm): PTH pad [<no net>] of GRID1
+    @(79.7400 mm, 47.2700 mm): Footprint RBIAS
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(59.4200 mm, 37.1100 mm): PTH pad [<no net>] of GRID1
+    @(56.8800 mm, 37.1100 mm): Footprint U1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(59.4200 mm, 39.6500 mm): PTH pad [<no net>] of GRID1
+    @(56.8800 mm, 37.1100 mm): Footprint U1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(59.4200 mm, 42.1900 mm): PTH pad [<no net>] of GRID1
+    @(56.8800 mm, 37.1100 mm): Footprint U1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(59.4200 mm, 44.7300 mm): PTH pad [<no net>] of GRID1
+    @(56.8800 mm, 37.1100 mm): Footprint U1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(61.9600 mm, 37.1100 mm): PTH pad [<no net>] of GRID1
+    @(56.8800 mm, 37.1100 mm): Footprint U1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(61.9600 mm, 39.6500 mm): PTH pad [<no net>] of GRID1
+    @(56.8800 mm, 37.1100 mm): Footprint U1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(61.9600 mm, 42.1900 mm): PTH pad [<no net>] of GRID1
+    @(56.8800 mm, 37.1100 mm): Footprint U1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(61.9600 mm, 44.7300 mm): PTH pad [<no net>] of GRID1
+    @(56.8800 mm, 37.1100 mm): Footprint U1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 21.8700 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 24.4100 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 29.4900 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 32.0300 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 34.5700 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 37.1100 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 39.6500 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 42.1900 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 44.7300 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 47.2700 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 49.8100 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 52.3500 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 54.8900 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 57.4300 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 59.9700 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 62.5100 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 65.0500 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 67.5900 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(20.0000 mm, 72.0000 mm): Segment on Edge.Cuts
+    @(21.3200 mm, 70.1300 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 21.8700 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 24.4100 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 29.4900 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 32.0300 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 34.5700 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 37.1100 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 39.6500 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 42.1900 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 44.7300 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 47.2700 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 49.8100 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 52.3500 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 54.8900 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 57.4300 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 59.9700 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 62.5100 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 65.0500 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 67.5900 mm): PTH pad [<no net>] of GRID1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4200 mm)
+    Rule: board setup constraints edge; error
+    @(109.0000 mm, 20.0000 mm): Segment on Edge.Cuts
+    @(107.6800 mm, 70.1300 mm): PTH pad [<no net>] of GRID1
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(26.4000 mm, 63.8000 mm): PCB text 'TP7' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(27.0000 mm, 29.5000 mm): PCB text '5V' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(27.0000 mm, 32.0000 mm): PCB text '3V3' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(27.0000 mm, 34.6000 mm): PCB text 'GND' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(27.0000 mm, 37.1000 mm): PCB text 'A0' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(49.3000 mm, 48.6000 mm): PCB text 'TP1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(49.3000 mm, 56.2000 mm): PCB text 'TP2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(49.3000 mm, 63.8000 mm): PCB text 'TP6' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(72.1000 mm, 48.6000 mm): PCB text 'TP4' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(72.1000 mm, 56.2000 mm): PCB text 'TP5' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(100.1000 mm, 43.5000 mm): PCB text 'TP3' on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(26.4000 mm, 65.0500 mm): Circle of TP7 on F.Silkscreen
+    @(26.4000 mm, 63.8000 mm): PCB text 'TP7' on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(49.2600 mm, 57.4300 mm): Circle of TP2 on F.Silkscreen
+    @(49.3000 mm, 56.2000 mm): PCB text 'TP2' on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(49.3000 mm, 63.8000 mm): PCB text 'TP6' on F.Silkscreen
+    @(49.2600 mm, 65.0500 mm): Circle of TP6 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(49.3000 mm, 48.6000 mm): PCB text 'TP1' on F.Silkscreen
+    @(49.2600 mm, 49.8100 mm): Circle of TP1 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(72.1000 mm, 48.6000 mm): PCB text 'TP4' on F.Silkscreen
+    @(72.1200 mm, 49.8100 mm): Circle of TP4 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(72.1200 mm, 57.4300 mm): Circle of TP5 on F.Silkscreen
+    @(72.1000 mm, 56.2000 mm): PCB text 'TP5' on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(100.1000 mm, 43.5000 mm): PCB text 'TP3' on F.Silkscreen
+    @(100.0600 mm, 44.7300 mm): Circle of TP3 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(80.9100 mm, 35.7800 mm): Segment of CIN on F.Silkscreen
+    @(83.5000 mm, 35.3000 mm): PCB text 'CIN' on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.4000 mm, 63.8000 mm): PCB text 'TP7' on F.Silkscreen
+    @(26.4000 mm, 65.0500 mm): PTH pad 1 [GND] of TP7
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.4000 mm, 63.8000 mm): PCB text 'TP7' on F.Silkscreen
+    @(26.4000 mm, 62.5100 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(36.5000 mm, 56.3000 mm): PCB text 'ROUT' on F.Silkscreen
+    @(36.5600 mm, 57.4300 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(40.6000 mm, 59.9700 mm): Segment of ROUT on F.Silkscreen
+    @(39.1000 mm, 59.9700 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(33.2900 mm, 58.6000 mm): Rectangle of ROUT on F.Silkscreen
+    @(39.1000 mm, 59.9700 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.5200 mm, 59.9700 mm): Segment of ROUT on F.Silkscreen
+    @(34.0200 mm, 59.9700 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(33.2900 mm, 58.6000 mm): Rectangle of ROUT on F.Silkscreen
+    @(34.0200 mm, 59.9700 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(49.3000 mm, 56.2000 mm): PCB text 'TP2' on F.Silkscreen
+    @(49.2600 mm, 57.4300 mm): PTH pad 1 [VREF_BUFFERED] of TP2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(49.3000 mm, 56.2000 mm): PCB text 'TP2' on F.Silkscreen
+    @(49.2600 mm, 54.8900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(49.3000 mm, 63.8000 mm): PCB text 'TP6' on F.Silkscreen
+    @(49.2600 mm, 65.0500 mm): PTH pad 1 [A0] of TP6
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(49.3000 mm, 63.8000 mm): PCB text 'TP6' on F.Silkscreen
+    @(49.2600 mm, 62.5100 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(36.5000 mm, 36.8000 mm): PCB text 'R2' on F.Silkscreen
+    @(36.5600 mm, 37.1100 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(40.6000 mm, 39.6500 mm): Segment of R2 on F.Silkscreen
+    @(39.1000 mm, 39.6500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(33.2900 mm, 38.2800 mm): Rectangle of R2 on F.Silkscreen
+    @(39.1000 mm, 39.6500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(33.2900 mm, 38.2800 mm): Rectangle of R2 on F.Silkscreen
+    @(34.0200 mm, 39.6500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.0000 mm, 37.1000 mm): PCB text 'A0' on F.Silkscreen
+    @(26.4000 mm, 37.1100 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.5200 mm, 39.6500 mm): Segment of R2 on F.Silkscreen
+    @(34.0200 mm, 39.6500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(36.5000 mm, 56.3000 mm): PCB text 'ROUT' on F.Silkscreen
+    @(36.5600 mm, 54.8900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(64.5000 mm, 68.5000 mm): PCB text 'ED-4 DRAFT' on F.Silkscreen
+    @(61.9600 mm, 67.5900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(64.5000 mm, 68.5000 mm): PCB text 'ED-4 DRAFT' on F.Silkscreen
+    @(64.5000 mm, 67.5900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(64.5000 mm, 68.5000 mm): PCB text 'ED-4 DRAFT' on F.Silkscreen
+    @(67.0400 mm, 67.5900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(49.3000 mm, 48.6000 mm): PCB text 'TP1' on F.Silkscreen
+    @(49.2600 mm, 47.2700 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(49.3000 mm, 48.6000 mm): PCB text 'TP1' on F.Silkscreen
+    @(49.2600 mm, 49.8100 mm): PTH pad 1 [VREF_RAW] of TP1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(72.1000 mm, 48.6000 mm): PCB text 'TP4' on F.Silkscreen
+    @(72.1200 mm, 49.8100 mm): PTH pad 1 [SIGNAL_INPUT] of TP4
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(72.1000 mm, 48.6000 mm): PCB text 'TP4' on F.Silkscreen
+    @(72.1200 mm, 47.2700 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(72.1000 mm, 56.2000 mm): PCB text 'TP5' on F.Silkscreen
+    @(72.1200 mm, 54.8900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(72.1000 mm, 56.2000 mm): PCB text 'TP5' on F.Silkscreen
+    @(72.1200 mm, 57.4300 mm): PTH pad 1 [AMP_OUT] of TP5
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(66.0000 mm, 24.5000 mm): PCB text 'CDEC' on F.Silkscreen
+    @(64.5000 mm, 24.4100 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(60.5000 mm, 33.0000 mm): PCB text 'U1 LM358N' on F.Silkscreen
+    @(56.8800 mm, 32.0300 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(60.5000 mm, 33.0000 mm): PCB text 'U1 LM358N' on F.Silkscreen
+    @(59.4200 mm, 32.0300 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(60.6900 mm, 35.7800 mm): Arc of U1 on F.Silkscreen
+    @(59.4200 mm, 37.1100 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(60.6900 mm, 35.7800 mm): Arc of U1 on F.Silkscreen
+    @(61.9600 mm, 37.1100 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(60.5000 mm, 33.0000 mm): PCB text 'U1 LM358N' on F.Silkscreen
+    @(61.9600 mm, 32.0300 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(60.5000 mm, 33.0000 mm): PCB text 'U1 LM358N' on F.Silkscreen
+    @(64.5000 mm, 32.0300 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.0000 mm, 29.5000 mm): PCB text '5V' on F.Silkscreen
+    @(26.4000 mm, 29.4900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.0000 mm, 32.0000 mm): PCB text '3V3' on F.Silkscreen
+    @(26.4000 mm, 32.0300 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(27.0000 mm, 34.6000 mm): PCB text 'GND' on F.Silkscreen
+    @(26.4000 mm, 34.5700 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(24.0000 mm, 26.0000 mm): PCB text 'J1' on F.Silkscreen
+    @(23.8600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(36.5000 mm, 24.3000 mm): PCB text 'R1' on F.Silkscreen
+    @(36.5600 mm, 24.4100 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.5200 mm, 26.9500 mm): Segment of R1 on F.Silkscreen
+    @(34.0200 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(33.2900 mm, 25.5800 mm): Rectangle of R1 on F.Silkscreen
+    @(34.0200 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(100.1000 mm, 43.5000 mm): PCB text 'TP3' on F.Silkscreen
+    @(100.0600 mm, 42.1900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(100.1000 mm, 43.5000 mm): PCB text 'TP3' on F.Silkscreen
+    @(100.0600 mm, 44.7300 mm): PTH pad 1 [SOURCE_NODE] of TP3
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(84.8000 mm, 43.6000 mm): PCB text 'RBIAS' on F.Silkscreen
+    @(84.8200 mm, 44.7300 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(84.8000 mm, 43.6000 mm): PCB text 'RBIAS' on F.Silkscreen
+    @(84.8200 mm, 42.1900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(88.8600 mm, 47.2700 mm): Segment of RBIAS on F.Silkscreen
+    @(87.3600 mm, 47.2700 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(80.7800 mm, 47.2700 mm): Segment of RBIAS on F.Silkscreen
+    @(82.2800 mm, 47.2700 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(84.8000 mm, 51.2000 mm): PCB text 'RF' on F.Silkscreen
+    @(84.8200 mm, 52.3500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(84.8000 mm, 51.2000 mm): PCB text 'RF' on F.Silkscreen
+    @(84.8200 mm, 49.8100 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(81.5500 mm, 45.9000 mm): Rectangle of RBIAS on F.Silkscreen
+    @(87.3600 mm, 47.2700 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(81.5500 mm, 45.9000 mm): Rectangle of RBIAS on F.Silkscreen
+    @(82.2800 mm, 47.2700 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(84.8000 mm, 58.8000 mm): PCB text 'RG' on F.Silkscreen
+    @(84.8200 mm, 59.9700 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(84.8000 mm, 58.8000 mm): PCB text 'RG' on F.Silkscreen
+    @(84.8200 mm, 57.4300 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(80.7800 mm, 54.8900 mm): Segment of RF on F.Silkscreen
+    @(82.2800 mm, 54.8900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(88.8600 mm, 62.5100 mm): Segment of RG on F.Silkscreen
+    @(87.3600 mm, 62.5100 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(81.5500 mm, 61.1400 mm): Rectangle of RG on F.Silkscreen
+    @(87.3600 mm, 62.5100 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(80.7800 mm, 62.5100 mm): Segment of RG on F.Silkscreen
+    @(82.2800 mm, 62.5100 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(81.5500 mm, 61.1400 mm): Rectangle of RG on F.Silkscreen
+    @(82.2800 mm, 62.5100 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(88.8600 mm, 54.8900 mm): Segment of RF on F.Silkscreen
+    @(87.3600 mm, 54.8900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(81.5500 mm, 53.5200 mm): Rectangle of RF on F.Silkscreen
+    @(87.3600 mm, 54.8900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(81.5500 mm, 53.5200 mm): Rectangle of RF on F.Silkscreen
+    @(82.2800 mm, 54.8900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(66.0000 mm, 24.5000 mm): PCB text 'CDEC' on F.Silkscreen
+    @(67.0400 mm, 24.4100 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(83.5000 mm, 35.3000 mm): PCB text 'CIN' on F.Silkscreen
+    @(82.2800 mm, 34.5700 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(83.5000 mm, 35.3000 mm): PCB text 'CIN' on F.Silkscreen
+    @(84.8200 mm, 34.5700 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(84.8000 mm, 24.3000 mm): PCB text 'RLED' on F.Silkscreen
+    @(84.8200 mm, 24.4100 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(80.7800 mm, 26.9500 mm): Segment of RLED on F.Silkscreen
+    @(82.2800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(81.5500 mm, 25.5800 mm): Rectangle of RLED on F.Silkscreen
+    @(82.2800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(96.3000 mm, 29.0000 mm): PCB text 'D1' on F.Silkscreen
+    @(94.9800 mm, 29.4900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(88.8600 mm, 26.9500 mm): Segment of RLED on F.Silkscreen
+    @(87.3600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(81.5500 mm, 25.5800 mm): Rectangle of RLED on F.Silkscreen
+    @(87.3600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(96.3000 mm, 29.0000 mm): PCB text 'D1' on F.Silkscreen
+    @(97.5200 mm, 29.4900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(94.9800 mm, 33.3000 mm): Arc of D1 on F.Silkscreen
+    @(94.9800 mm, 29.4900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(94.9800 mm, 33.3000 mm): Arc of D1 on F.Silkscreen
+    @(92.4400 mm, 34.5700 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(94.9800 mm, 33.3000 mm): Arc of D1 on F.Silkscreen
+    @(92.4400 mm, 32.0300 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(94.9800 mm, 33.3000 mm): Arc of D1 on F.Silkscreen
+    @(94.9800 mm, 29.4900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(94.9800 mm, 33.3000 mm): Arc of D1 on F.Silkscreen
+    @(97.5200 mm, 32.0300 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(94.9800 mm, 33.3000 mm): Arc of D1 on F.Silkscreen
+    @(97.5200 mm, 34.5700 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(94.9800 mm, 33.3000 mm): Circle of D1 on F.Silkscreen
+    @(97.5200 mm, 32.0300 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(94.9800 mm, 33.3000 mm): Circle of D1 on F.Silkscreen
+    @(97.5200 mm, 34.5700 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(94.9800 mm, 33.3000 mm): Circle of D1 on F.Silkscreen
+    @(92.4400 mm, 34.5700 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(94.9800 mm, 33.3000 mm): Circle of D1 on F.Silkscreen
+    @(92.4400 mm, 32.0300 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(48.0000 mm, 24.5000 mm): PCB text 'CREF' on F.Silkscreen
+    @(46.7200 mm, 24.4100 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(48.0000 mm, 24.5000 mm): PCB text 'CREF' on F.Silkscreen
+    @(49.2600 mm, 24.4100 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(46.7200 mm, 28.2400 mm): Circle of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(46.7200 mm, 28.2400 mm): Circle of CREF on F.Silkscreen
+    @(44.1800 mm, 29.4900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(46.7200 mm, 28.2400 mm): Circle of CREF on F.Silkscreen
+    @(49.2600 mm, 29.4900 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(46.7200 mm, 28.2400 mm): Circle of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.1710 mm, 27.8400 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.1770 mm, 27.8000 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.1840 mm, 27.7600 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.1920 mm, 27.7200 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.2010 mm, 27.6800 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.2100 mm, 27.6400 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.2190 mm, 27.6000 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.2300 mm, 27.5600 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.2410 mm, 27.5200 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.2530 mm, 27.4800 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.2650 mm, 27.4400 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.2780 mm, 27.4000 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.2920 mm, 27.3600 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.3070 mm, 27.3200 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.3220 mm, 27.2800 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.3380 mm, 27.2400 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.3550 mm, 27.2000 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.3730 mm, 27.1600 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.3910 mm, 27.1200 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.4110 mm, 27.0800 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.4310 mm, 27.0400 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.4520 mm, 27.0000 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.4740 mm, 26.9600 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.4970 mm, 26.9200 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.5210 mm, 26.8800 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(40.6000 mm, 26.9500 mm): Segment of R1 on F.Silkscreen
+    @(39.1000 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(33.2900 mm, 25.5800 mm): Rectangle of R1 on F.Silkscreen
+    @(39.1000 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.5450 mm, 26.8400 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.5710 mm, 26.8000 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.5980 mm, 26.7600 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.6260 mm, 26.7200 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.6550 mm, 26.6800 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.6850 mm, 26.6400 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.7170 mm, 26.6000 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.7500 mm, 26.5600 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.7840 mm, 26.5200 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.8190 mm, 26.4800 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.8560 mm, 26.4400 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.8950 mm, 26.4000 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.9350 mm, 26.3600 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 26.3600 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 26.4000 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 26.4400 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 26.4800 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 26.5200 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 26.5600 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 26.6000 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 26.6400 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 26.6800 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 26.7200 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 26.7600 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 26.8000 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 26.8400 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(44.1650 mm, 27.8800 mm): Segment of CREF on F.Silkscreen
+    @(44.1800 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 26.8800 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 26.9200 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 26.9600 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.0000 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.0400 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.0800 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.1200 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.1600 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.2000 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.2400 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.2800 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.3200 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.3600 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.4000 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.4400 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.4800 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.5200 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.5600 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.6000 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.6400 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.6800 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.7200 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.7600 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.8000 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.8400 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.7600 mm, 27.8800 mm): Segment of CREF on F.Silkscreen
+    @(49.2600 mm, 26.9500 mm): PTH pad [<no net>] of GRID1
+
+** Found 31 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(23.8600 mm, 32.0300 mm): PTH pad 2 [+3V3] of J1
+    @(79.7400 mm, 26.9500 mm): PTH pad 1 [+3V3] of RLED
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(82.2800 mm, 39.6500 mm): PTH pad 1 [SOURCE_NODE] of CIN
+    @(94.9800 mm, 34.5700 mm): PTH pad 1 [SOURCE_NODE] of D1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(94.9800 mm, 34.5700 mm): PTH pad 1 [SOURCE_NODE] of D1
+    @(89.9000 mm, 26.9500 mm): PTH pad 2 [SOURCE_NODE] of RLED
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(100.0600 mm, 44.7300 mm): PTH pad 1 [SOURCE_NODE] of TP3
+    @(94.9800 mm, 34.5700 mm): PTH pad 1 [SOURCE_NODE] of D1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(41.6400 mm, 26.9500 mm): PTH pad 2 [VREF_RAW] of R1
+    @(31.4800 mm, 39.6500 mm): PTH pad 1 [VREF_RAW] of R2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(46.7200 mm, 29.4900 mm): PTH pad 1 [VREF_RAW] of CREF
+    @(41.6400 mm, 26.9500 mm): PTH pad 2 [VREF_RAW] of R1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(49.2600 mm, 49.8100 mm): PTH pad 1 [VREF_RAW] of TP1
+    @(56.8800 mm, 42.1900 mm): PTH pad 3 [VREF_RAW] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(56.8800 mm, 42.1900 mm): PTH pad 3 [VREF_RAW] of U1
+    @(46.7200 mm, 29.4900 mm): PTH pad 1 [VREF_RAW] of CREF
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(26.4000 mm, 65.0500 mm): PTH pad 1 [GND] of TP7
+    @(41.6400 mm, 39.6500 mm): PTH pad 2 [GND] of R2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(41.6400 mm, 39.6500 mm): PTH pad 2 [GND] of R2
+    @(56.8800 mm, 44.7300 mm): PTH pad 4 [GND] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(41.6400 mm, 39.6500 mm): PTH pad 2 [GND] of R2
+    @(23.8600 mm, 34.5700 mm): PTH pad 3 [GND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(46.7200 mm, 26.9900 mm): PTH pad 2 [GND] of CREF
+    @(41.6400 mm, 39.6500 mm): PTH pad 2 [GND] of R2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(64.5000 mm, 26.9900 mm): PTH pad 2 [GND] of CDEC
+    @(46.7200 mm, 26.9900 mm): PTH pad 2 [GND] of CREF
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(94.9800 mm, 32.0300 mm): PTH pad 2 [GND] of D1
+    @(64.5000 mm, 26.9900 mm): PTH pad 2 [GND] of CDEC
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(64.5000 mm, 42.1900 mm): PTH pad 6 [FEEDBACK] of U1
+    @(79.7400 mm, 62.5100 mm): PTH pad 1 [FEEDBACK] of RG
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(79.7400 mm, 62.5100 mm): PTH pad 1 [FEEDBACK] of RG
+    @(89.9000 mm, 54.8900 mm): PTH pad 2 [FEEDBACK] of RF
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(49.2600 mm, 57.4300 mm): PTH pad 1 [VREF_BUFFERED] of TP2
+    @(56.8800 mm, 39.6500 mm): PTH pad 2 [VREF_BUFFERED] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(56.8800 mm, 37.1100 mm): PTH pad 1 [VREF_BUFFERED] of U1
+    @(56.8800 mm, 39.6500 mm): PTH pad 2 [VREF_BUFFERED] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(56.8800 mm, 39.6500 mm): PTH pad 2 [VREF_BUFFERED] of U1
+    @(89.9000 mm, 47.2700 mm): PTH pad 2 [VREF_BUFFERED] of RBIAS
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(89.9000 mm, 62.5100 mm): PTH pad 2 [VREF_BUFFERED] of RG
+    @(89.9000 mm, 47.2700 mm): PTH pad 2 [VREF_BUFFERED] of RBIAS
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(64.5000 mm, 39.6500 mm): PTH pad 7 [AMP_OUT] of U1
+    @(72.1200 mm, 57.4300 mm): PTH pad 1 [AMP_OUT] of TP5
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(64.5000 mm, 39.6500 mm): PTH pad 7 [AMP_OUT] of U1
+    @(31.4800 mm, 59.9700 mm): PTH pad 1 [AMP_OUT] of ROUT
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(72.1200 mm, 57.4300 mm): PTH pad 1 [AMP_OUT] of TP5
+    @(79.7400 mm, 54.8900 mm): PTH pad 1 [AMP_OUT] of RF
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(23.8600 mm, 37.1100 mm): PTH pad 4 [A0] of J1
+    @(41.6400 mm, 59.9700 mm): PTH pad 2 [A0] of ROUT
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(41.6400 mm, 59.9700 mm): PTH pad 2 [A0] of ROUT
+    @(49.2600 mm, 65.0500 mm): PTH pad 1 [A0] of TP6
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(31.4800 mm, 26.9500 mm): PTH pad 1 [+5V] of R1
+    @(23.8600 mm, 29.4900 mm): PTH pad 1 [+5V] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(64.5000 mm, 29.4900 mm): PTH pad 1 [+5V] of CDEC
+    @(31.4800 mm, 26.9500 mm): PTH pad 1 [+5V] of R1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(64.5000 mm, 37.1100 mm): PTH pad 8 [+5V] of U1
+    @(64.5000 mm, 29.4900 mm): PTH pad 1 [+5V] of CDEC
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(64.5000 mm, 44.7300 mm): PTH pad 5 [SIGNAL_INPUT] of U1
+    @(72.1200 mm, 49.8100 mm): PTH pad 1 [SIGNAL_INPUT] of TP4
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(72.1200 mm, 49.8100 mm): PTH pad 1 [SIGNAL_INPUT] of TP4
+    @(79.7400 mm, 47.2700 mm): PTH pad 1 [SIGNAL_INPUT] of RBIAS
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(79.7400 mm, 47.2700 mm): PTH pad 1 [SIGNAL_INPUT] of RBIAS
+    @(82.2800 mm, 37.1500 mm): PTH pad 2 [SIGNAL_INPUT] of CIN
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

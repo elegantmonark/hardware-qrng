@@ -139,6 +139,12 @@ The cable opening accommodates the currently planned Arduino connections: 5 V, 3
 
 The editable source, printable files, dimensions and print guidance are available in the [ED-4 CAD directory](hardware/ED-4/cad/README.md).
 
+A connected schematic and placement-only KiCad prototype are also available in the [ED-4 KiCad directory](hardware/ED-4/kicad/README.md). The schematic passes ERC with 0 errors and 0 warnings. The board maps the proposed ED-3 components and bring-up test points onto the fitted perfboard, but deliberately leaves permanent wiring unfinished until the breadboard topology has been verified.
+
+| ED-4 isometric placement render | Connected ED-4 circuit schematic |
+|:---:|:---:|
+| ![ED-4 perfboard placement rendered in KiCad](hardware/ED-4/kicad/exports/ed4-perfboard-prototype-isometric.png) | ![Connected ED-4 circuit schematic](hardware/ED-4/kicad/exports/ed4-perfboard-prototype-schematic.png) |
+
 | Printed ED-4 enclosure base | Initial perfboard fit check |
 |:---:|:---:|
 | ![Printed ED-4 enclosure base](hardware/ED-4/photos/ed4-printed-enclosure.jpeg) | ![Unpopulated perfboard fitted inside the ED-4 enclosure](hardware/ED-4/photos/ed4-perfboard-fit-check.jpeg) |
