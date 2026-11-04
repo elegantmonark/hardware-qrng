@@ -1,0 +1,12 @@
+Runtime: MATLAB 26.2.0.3433840 (R2026b) Update 1
+Samples: 1000000
+Ones: 497767
+Zeros: 502233
+Proportion of ones: 0.497767000
+Marginal binary Shannon entropy: 0.999985612563 bits/symbol
+Raw ADC lag-1 correlation: 0.905703941458
+LSB lag-1 correlation: 0.001193079813
+Dominant component: 0.067256000 cycles/sample (14.868562 samples/period)
+Preserved reference checked: 1
+Interpretation: near-balanced LSBs coexist with strong raw-signal structure.
+These are descriptive diagnostics, not proof of quantum or secure entropy.

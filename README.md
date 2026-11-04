@@ -199,6 +199,13 @@ python software/analyser.py
 python software/compare.py
 ```
 
+The [MATLAB analysis](software/matlab/README.md) covers the original April
+capture's trace, spectrum, correlation and bit balance. It ran in MATLAB R2026b
+Update 1 and matched the saved Python reference. The [exported results](results/ED-1/matlab/README.md)
+include the report, correlation values and editable figure.
+
+![MATLAB diagnostics of the April Arduino capture](figures/ED-1/matlab_diagnostics.png)
+
 The exploratory NIST wrapper requires a separately installed NIST STS executable. Read [`docs/validation.md`](docs/validation.md) before interpreting its output.
 
 <a id="collection"></a>
