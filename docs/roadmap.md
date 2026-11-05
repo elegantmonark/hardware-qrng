@@ -44,6 +44,8 @@ This is a living checklist rather than a deadline schedule. A task is complete o
 - [ ] Calculate and measure gain and bandwidth.
 - [ ] Check for clipping, saturation, oscillation, and rail/reference movement.
 - [ ] Record any change from the current topology as a new circuit revision.
+- [ ] If useful, transfer the validated circuit to perfboard as part of ED 3,
+  document its wiring and repeat the electrical checks and control captures.
 
 ## 6. Collect the ED-3 campaign
 
@@ -69,23 +71,38 @@ This is a living checklist rather than a deadline schedule. A task is complete o
 - [ ] Stop or quarantine output after a detected source failure.
 - [ ] Select a conditioner only after the supported input entropy is known.
 
-## 9. Build ED-4
+## 9. Confirm the ED 4 enclosure envelope
 
 - [x] Use the printed shell as a fit prototype and confirm the bare perfboard envelope.
 - [x] Add photographs of the printed ED-4 shell and initial perfboard fit check.
-- [ ] Transfer the verified ED-3 topology to perfboard.
-- [ ] Keep analogue wiring short and separated from digital wiring.
-- [ ] Add labelled leads, test points, strain relief, and safe clearances.
-- [ ] Photograph and document the completed ED-4 assembly.
-- [ ] Repeat key controls after the transfer.
+- [x] Set the nominal PCB target to the existing 89 by 52 mm board envelope.
+- [ ] Measure the printed base and lid to establish final PCB edge tolerances,
+  support clearances, component height and connector access.
 
-## 10. Characterise enclosure effects
+## 10. Design and build the ED 4 PCB
+
+- [x] Prepare the ED4 A Arduino schematic, routed prototype and assembly drawings.
+- [x] Pass ERC, DRC, schematic parity and an independent circuit pin contract check.
+- [ ] Complete Trishan's layout review and add his chosen screenshots.
+- [ ] Design ED4 E for ESP32 after reviewing its power and ADC interface.
+- [ ] Reduce or replace ED-3 if bench measurements show a simpler topology is more defensible.
+- [ ] Freeze the analogue topology only after reference, gain, clipping, bandwidth and control captures pass.
+- [ ] Compare the Arduino ADC, ESP32 ADC and a suitable external ADC using the same analogue test signal.
+- [ ] Keep the microcontroller separate from the physical-source claim; it is acquisition and transport hardware only.
+- [ ] Include labelled test points, source/control selection, decoupling and short analogue routing.
+- [ ] Use a nominal 89 by 52 mm outline and 1.6 mm thickness, with rail and
+  corner guide keepouts based on the printed enclosure.
+- [ ] Run ERC and DRC and complete a schematic, PCB and BOM review before ordering.
+- [ ] Assemble one board first and repeat the breadboard controls before treating the PCB as validated.
+
+## 11. Characterise enclosure effects
 
 - [ ] Test optical sensitivity before deciding how fully to block light.
 - [ ] Check temperature drift and ventilation requirements.
 - [ ] Compare interference with the circuit exposed and provisionally enclosed.
 - [ ] Record that a plastic enclosure does not provide meaningful EMI shielding by itself.
-- [ ] Finalise CAD only after board dimensions and connector locations are stable.
+- [ ] Keep the current printed enclosure and check the final PCB assembly against it.
+- [ ] Record any enclosure adjustment needed for the selected connector or populated board.
 
 ## Definition of completion
 

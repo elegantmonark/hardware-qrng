@@ -28,6 +28,9 @@ The historical SP 800-22 output came from an external package, skipped two tests
 
 The project has not been qualified against supply injection, electromagnetic coupling, temperature manipulation, optical injection, component substitution, or malicious interference with the data path.
 
-## ED-4 enclosure is not validation
+## ED 3 transfer and ED 4 enclosure effects
 
-A perfboard assembly or printed enclosure may improve mechanical stability but can also alter coupling, temperature, grounding, and noise. ED-4 must repeat the relevant controls and measurements after assembly.
+Optional ED 3 perfboard transfer and the ED 4 PCB can alter coupling, grounding
+and noise. The enclosure can also change temperature and optical exposure.
+Repeat the relevant controls and measurements after each assembly change.
+The printed base and bare board fit check establish mechanical progress only.

@@ -4,6 +4,10 @@ __pycache__/
 .pytest_cache/
 .DS_Store
 Thumbs.db
+*.kicad_prl
+~*.lck
+**/.history/
+**/*-backups/
 .pio/
 .platformio-core/
 .vscode/.browse.c_cpp.db*
@@ -20,14 +24,3 @@ results/**/qrng_nist.bin
 # Local rendering and browser state must never be committed.
 .edge-render-profile/
 **/.edge-render-profile/
-
-# LaTeX build artefacts
-paper/*.aux
-paper/*.bbl
-paper/*.blg
-paper/*.fdb_latexmk
-paper/*.fls
-paper/*.log
-paper/*.out
-paper/*.pdf
-paper/*.synctex.gz

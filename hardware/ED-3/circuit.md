@@ -111,3 +111,9 @@ Arduino AREF remains disconnected.
    controls before retaining a dataset.
 
 Disconnect USB power before changing any connection.
+
+## Optional perfboard version
+
+Transfer only the circuit that passed the breadboard checks. Keep the perfboard
+version within ED 3, document its wiring and repeat the staged checks and control
+captures. The [ED 4 PCB](../ED-4/pcb-plan.md) is the later enclosure sized build.

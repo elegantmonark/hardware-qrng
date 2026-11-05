@@ -1,12 +1,25 @@
-# ED-4 enclosure and perfboard plan
+# ED 4 custom PCB and printed enclosure
 
-ED-4 is the planned mechanically stable implementation of the ED-3 topology after that breadboard has been tested. It is expected to use perfboard, labelled Arduino leads, strain relief, and a 3D printed enclosure.
+ED 4 will implement the validated ED 3 circuit as a routed PCB inside the
+enclosure already printed. The nominal PCB target is 89 by 52 mm and 1.6 mm
+thick, matching the original board envelope in the enclosure CAD. Optional
+perfboard assembly belongs to [ED 3](../ED-3/README.md).
 
-The first base has now been printed and the intended 89 by 52 mm bare perfboard fits inside its locating features. This is evidence of mechanical fit only. The enclosure remains a prototype until populated-board clearance, ventilation, cable access, electrical isolation, serviceability and complete assembled operation have been checked.
+The [PCB plan](pcb-plan.md) records the design constraints and checks before
+fabrication. [ED4 A](pcb/ED4-A/README.md) is the Arduino review layout. ED4 E is
+the planned ESP32 revision. Assembly, physical fit and electrical validation
+remain pending.
+
+The first base was printed and an 89 by 52 mm bare perfboard fits inside its
+locating features. That check supports the initial PCB envelope. Final PCB fit,
+component clearance, solder joints, lid fit and cable access still need checking.
 
 ## Current enclosure design
 
-The first parametric enclosure source is under [`cad/`](cad/README.md). It is sized for an 89 by 52 mm perfboard, provides 34 mm of internal height, and has one opening for the Arduino harness. The simplified ED-3 topology currently requires 5 V, 3.3 V, GND and A0.
+The parametric enclosure source is under [`cad/`](cad/README.md). It provides
+34 mm of internal height and a 26 by 12 mm cable opening. Its board preview is
+89 by 52 mm and 1.6 mm thick. The final connector and acquisition interface will
+be selected from the validated circuit and checked against that opening.
 
 The board rests on raised rails and is located by edge guides, so the design does not depend on unconfirmed positions for mounting holes. The lid uses a configurable locating lip held by friction for straightforward prototype printing.
 
@@ -16,14 +29,13 @@ The board rests on raised rails and is located by edge guides, so the design doe
 |:---:|:---:|
 | ![Printed ED-4 enclosure base](photos/ed4-printed-enclosure.jpeg) | ![Bare perfboard fitted in the ED-4 enclosure](photos/ed4-perfboard-fit-check.jpeg) |
 
-The photographs were taken on 18 October 2026 and show the first physical base with the unpopulated perfboard seated inside it. Component installation and electrical validation remain future work.
+The photographs were taken on 18 October 2026 and show the first physical base
+with the unpopulated perfboard seated inside it. They establish the initial
+mechanical envelope; they do not show the planned custom PCB.
 
-## KiCad circuit and placement prototype
+## Current KiCad project
 
-An editable KiCad draft now documents the connected circuit and maps the proposed ED-3 parts and labelled bring-up test points onto the 89 by 52 mm perfboard. The schematic passes KiCad ERC with 0 errors and 0 warnings. This is still a prototype: permanent jumper and solder-side routing must wait until the ED-3 breadboard topology has passed its electrical and controlled-data checks.
-
-| Isometric placement render | Connected circuit schematic |
-|:---:|:---:|
-| ![ED-4 KiCad perfboard placement prototype](kicad/exports/ed4-perfboard-prototype-isometric.png) | ![ED-4 connected circuit schematic](kicad/exports/ed4-perfboard-prototype-schematic.png) |
-
-The native project, schematic, board file, scalable layout export, rules reports and generation notes are stored in the [`kicad/`](kicad/README.md) directory. The board remains a perfboard placement model rather than a routed manufacturing design.
+The [ED4 A Arduino project](pcb/ED4-A/README.md) contains the connected
+schematic, routed PCB, BOM and assembly drawings. It supersedes the earlier
+unfinished perfboard placement draft. The printed enclosure and bare board
+fit photographs remain as the physical record behind the chosen board outline.

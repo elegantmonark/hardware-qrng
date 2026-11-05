@@ -1,0 +1,17 @@
+Reference,Value,Quantity,Footprint,Manufacturer part number,Specification
+J1,ARDUINO,1,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,Harwin M20-9990446,"Four pin male header, 2.54 mm pitch"
+U1,MCP6002-I/P,1,Package_DIP:DIP-8_W7.62mm,Microchip MCP6002-I/P,Dual rail to rail op amp in eight pin PDIP
+R1,10k,1,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,Yageo MFR-25FBF52-10K,"10 kOhm, 1 percent metal film, quarter watt"
+R2,10k,1,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,Yageo MFR-25FBF52-10K,"10 kOhm, 1 percent metal film, quarter watt"
+C1,10uF,1,Capacitor_THT:CP_Radial_D5.0mm_P2.00mm,Panasonic EEU-FR1H100,"10 uF, 50 V, 5 mm diameter, 2 mm lead pitch, polarized"
+C2,100nF,1,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,TDK FG18X7R1H104KNT06,"100 nF X7R, 50 V, 2.5 mm lead gap"
+C3,10uF,1,Capacitor_THT:CP_Radial_D5.0mm_P2.00mm,Panasonic EEU-FR1H100,"10 uF, 50 V, 5 mm diameter, 2 mm lead pitch, polarized"
+R3,10M,1,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,Yageo MFR-25FBF52-10M,"10 MOhm metal film, verify stock and tolerance"
+D1,WP7113GD,1,LED_THT:LED_D5.0mm,Kingbright WP7113GD,"Experimental green LED, five mm body; source behavior requires bench checks"
+JP1,SOURCE OR CONTROL,1,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Harwin M20-9990346,"Three pin male header, 2.54 mm pitch"
+C4,100nF,1,Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm,WIMA MKS2C031001A00KSSD,"100 nF film, 63 V, 5 mm lead pitch"
+R4,100k,1,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,Yageo MFR-25FBF52-100K,"100 kOhm, 1 percent metal film, quarter watt"
+R5,1k,1,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,Yageo MFR-25FBF52-1K,"1 kOhm, 1 percent metal film, quarter watt"
+R6,100k,1,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,Yageo MFR-25FBF52-100K,"100 kOhm, 1 percent metal film, quarter watt"
+R7,1k,1,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,Yageo MFR-25FBF52-1K,"1 kOhm, 1 percent metal film, quarter watt"
+JP1 shunt,2.54 mm jumper shunt,1,Fits JP1,Samtec SNT-100-BK-T,One shunt for source or grounded control

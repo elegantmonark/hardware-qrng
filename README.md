@@ -13,19 +13,59 @@ This is my attempt to investigate whether a circuit built around a green LED, an
 
 ## Contents
 
-[Overview](#overview) | [Quick terminology](#terminology) | [Development](#development) | [ED 1 results](#ed1results) | [ED 2 circuit](#ed2circuit) | [ED 3 circuit](#ed3circuit) | [ED 4 enclosure](#ed4enclosure) | [Hardware photographs](#photographs) | [Repository guide](#repositoryguide) | [Reproducing the analysis](#analysis) | [Collecting new data](#collection) | [Bitstream Art](#art) | [Limits](#limits) | [Next work](#nextwork) | [Licence](#licence)
+[MATLAB analysis](#matlab) | [ED4 PCB](#ed4pcb) | [Overview](#overview) | [Quick terminology](#terminology) | [Development](#development) | [ED 1 results](#ed1results) | [ED 2 circuit](#ed2circuit) | [ED 3 circuit](#ed3circuit) | [ED 4 enclosure](#ed4enclosure) | [Hardware photographs](#photographs) | [Repository guide](#repositoryguide) | [Reproducing the analysis](#analysis) | [Collecting new data](#collection) | [Bitstream Art](#art) | [Limits](#limits) | [Next work](#nextwork) | [Licence](#licence)
+
+<a id="matlab"></a>
+## MATLAB analysis
+
+I used MATLAB to examine the original million sample Arduino capture through
+signal traces, ADC distributions, a Hann windowed FFT, autocorrelation and bit
+balance across consecutive blocks. The analysis runs without extra toolboxes.
+
+The proportion of ones is 0.497767, but the raw ADC correlation at lag 1 is
+0.9057 and the strongest spectral component repeats every 14.87 samples.
+The extracted bits look nearly balanced while the original signal has clear
+structure. That distinction guides the next round of circuit measurements.
+
+![MATLAB diagnostics of the April Arduino capture](figures/ED-1/matlab_diagnostics.png)
+
+The [MATLAB source and instructions](software/matlab/README.md) explain how to
+repeat the analysis. The [saved results](results/ED-1/matlab/README.md) include
+the report, correlation CSV and editable figure. The MATLAB R2026b Update 1
+results matched the Python audit, including all 101 exported correlation rows.
+These are descriptive checks, not proof of quantum origin or secure entropy.
+
+<a id="ed4pcb"></a>
+## ED4 A Arduino PCB
+
+The first ED 4 PCB is a two layer, 89 by 52 mm board for the enclosure already
+printed. It brings the buffered reference, source selector, signal amplifier
+and Arduino interface together with seven test points and a bottom ground fill.
+The design uses through hole parts for assembly and inspection.
+
+The [editable KiCad project](hardware/ED-4/pcb/ED4-A/ED4_A_Arduino.kicad_pro),
+[schematic](hardware/ED-4/pcb/ED4-A/drawings/ED4_A_schematic.pdf) and
+[board guide](hardware/ED-4/pcb/ED4-A/README.md) are available for review.
+The revision B layout uses an MCP6002 and a standard 100k and 1k gain network.
+It passes KiCad ERC, DRC and schematic parity checks. Circuit validation and
+populated enclosure fit remain pending. The [purchase BOM](hardware/ED-4/pcb/ED4-A/BOM.csv)
+records the chosen components.
+
+ED4 A uses an external Arduino with a 5 V ADC interface. ED4 E is the planned
+ESP32 revision and will have its own ADC and power interface review.
 
 <a id="overview"></a>
 ## Overview
 
-The project is organised into four experimental demonstrators.
+The project is organised into four stages. ED stands for Entropy Demonstrator;
+the table distinguishes the completed work, archived prototypes and planned builds.
 
 | Stage | Purpose | Current state |
 |---|---|---|
 | **ED-1** | Prove that the full path from circuit to saved data and analysis could work | Complete and preserved |
 | **ED-2** | Explore a documented two-stage analogue path and acquisition process | Preserved as a breadboard development stage; reference loading found during bring-up |
-| **ED-3** | Test a simpler circuit with a buffered reference and one signal-gain stage | Design documented; assembly and validation pending |
-| **ED-4** | Transfer a verified circuit to perfboard and place it in a stable enclosure | Enclosure printed and perfboard fit confirmed; electrical transfer pending ED-3 validation |
+| **ED-3** | Validate a simpler buffered reference circuit on breadboard, with optional perfboard transfer afterwards | Design documented; assembly and validation pending |
+| **ED-4** | Custom PCB for the existing printed enclosure | ED4 A Arduino layout available for review; 89 by 52 mm; bench and populated fit checks pending. ED4 E ESP32 revision planned |
 
 The name QRNG describes the research direction. The present evidence supports an experimental physical entropy source, not a certified quantum random number generator or a source suitable for cryptographic use.
 
@@ -64,7 +104,15 @@ In April 2026, ED-1 became the first complete demonstrator. It produced a saved 
 
 ED-2 kept the original LED source idea but added a defined midpoint reference, two amplifier stages, clearer bias paths, supply decoupling and output protection. During systematic bring-up, the Stage A reference branch pulled the unbuffered midpoint from approximately 2.5 V to approximately 1.3 V. That result is preserved as part of the engineering record rather than presented as a validated improvement.
 
-ED-3 starts again with a simpler topology. One LM358 section buffers the midpoint reference and the other provides a single signal-gain stage. ED-4 is the later mechanical stage: an 89 by 52 mm perfboard and removable enclosure after ED-3 has passed electrical and data checks. The ED-4 shell has now been printed and the bare perfboard has passed its first physical fit check.
+ED 3 starts again with a simpler topology. Its documented breadboard uses one
+LM358 section to buffer the midpoint and the other as a signal amplifier. The
+ED 4 PCB revision B uses a pin compatible MCP6002 and revised resistor values
+to reduce input bias error. That component change needs its own bench checks.
+After breadboard validation, the ED 3 circuit may also be transferred to
+perfboard and checked again. ED 4 has a nominal 89 by 52 mm outline for the
+enclosure already printed. The earlier
+bare perfboard fit check establishes a starting board envelope; PCB tolerances,
+component clearance and connector access still need checking.
 
 <a id="ed1results"></a>
 ## ED 1 results
@@ -121,34 +169,48 @@ matching sampler is stored at
 ED-3 will not be described as working until its reference, amplifier baseline,
 source controls and repeat captures have been checked.
 
-<a id="ed4enclosure"></a>
-## ED 4 enclosure
+An optional perfboard version remains part of ED 3. It follows breadboard
+validation and must repeat the electrical checks and control captures after
+transfer.
 
-The ED-4 case is a two part parametric design for the planned perfboard build. The base has been printed successfully, and the intended 89 by 52 mm perfboard fits between the locating features. This confirms the initial board envelope only; it does not yet confirm component clearance, cable routing or electrical operation.
+<a id="ed4enclosure"></a>
+## ED 4 PCB and printed enclosure
+
+ED 4 combines a custom routed PCB with the existing two part enclosure. The base
+was printed successfully, and an 89 by 52 mm bare perfboard fits between its
+locating features. The PCB will use that nominal envelope, with a target
+thickness of 1.6 mm. Its final fit must account for print tolerances, support
+rails, solder joints, component height and cable access.
 
 | Dimension | Value |
 |---|---:|
-| Perfboard | 89 by 52 mm |
+| Nominal PCB target | 89 by 52 mm, 1.6 mm thick |
 | Internal space | 105 by 68 by 34 mm |
 | Approximate assembled exterior | 109.8 by 72.8 by 40 mm |
 | Board support height | 8 mm |
 | Clearance above the board | approximately 24.4 mm |
 | Cable opening | 26 by 12 mm |
 
-The cable opening accommodates the currently planned Arduino connections: 5 V, 3.3 V, GND and A0. Arduino AREF remains unconnected.
+The existing cable opening was sized for an Arduino harness. The final PCB
+connector and acquisition interface will follow the validated ED 3 circuit.
+
+The [PCB plan](hardware/ED-4/pcb-plan.md) records the mechanical constraints,
+intended features and checks required before fabrication.
+
+The [ED4 A Arduino PCB](hardware/ED-4/pcb/ED4-A/README.md) is the current routed
+review design. ED4 E will cover ESP32 separately. The board outline is shared;
+the ADC and power interfaces must be reviewed for each revision.
 
 The editable source, printable files, dimensions and print guidance are available in the [ED-4 CAD directory](hardware/ED-4/cad/README.md).
 
-A connected schematic and placement-only KiCad prototype are also available in the [ED-4 KiCad directory](hardware/ED-4/kicad/README.md). The schematic passes ERC with 0 errors and 0 warnings. The board maps the proposed ED-3 components and bring-up test points onto the fitted perfboard, but deliberately leaves permanent wiring unfinished until the breadboard topology has been verified.
-
-| ED-4 isometric placement render | Connected ED-4 circuit schematic |
-|:---:|:---:|
-| ![ED-4 perfboard placement rendered in KiCad](hardware/ED-4/kicad/exports/ed4-perfboard-prototype-isometric.png) | ![Connected ED-4 circuit schematic](hardware/ED-4/kicad/exports/ed4-perfboard-prototype-schematic.png) |
+The current KiCad evidence is the [ED4 A schematic and routed PCB](hardware/ED-4/pcb/ED4-A/README.md).
+The layout passes ERC, DRC and schematic parity checks. The earlier unfinished
+perfboard placement draft has been superseded by this design.
 
 | Printed ED-4 enclosure base | Initial perfboard fit check |
 |:---:|:---:|
 | ![Printed ED-4 enclosure base](hardware/ED-4/photos/ed4-printed-enclosure.jpeg) | ![Unpopulated perfboard fitted inside the ED-4 enclosure](hardware/ED-4/photos/ed4-perfboard-fit-check.jpeg) |
-| The first physical print of the enclosure base and internal locating features. | The intended 89 by 52 mm perfboard seated in the printed base before component transfer. |
+| The first physical print of the enclosure base and internal locating features. | An 89 by 52 mm bare perfboard establishing the initial envelope for the planned PCB. |
 
 <a id="photographs"></a>
 ## Hardware photographs
@@ -199,12 +261,8 @@ python software/analyser.py
 python software/compare.py
 ```
 
-The [MATLAB analysis](software/matlab/README.md) covers the original April
-capture's trace, spectrum, correlation and bit balance. It ran in MATLAB R2026b
-Update 1 and matched the saved Python reference. The [exported results](results/ED-1/matlab/README.md)
-include the report, correlation values and editable figure.
-
-![MATLAB diagnostics of the April Arduino capture](figures/ED-1/matlab_diagnostics.png)
+For the MATLAB version, see the [analysis section](#matlab) and its
+[run instructions](software/matlab/README.md).
 
 The exploratory NIST wrapper requires a separately installed NIST STS executable. Read [`docs/validation.md`](docs/validation.md) before interpreting its output.
 
@@ -246,7 +304,9 @@ Read [`docs/limitations.md`](docs/limitations.md), [`docs/safety.md`](docs/safet
 3. Capture ED-3 controls and source runs across independent restarts.
 4. Compare its raw signal structure, bias, correlation and stability with ED-1.
 5. Establish a conservative entropy estimate before introducing conditioning.
-6. Transfer only a verified topology to the ED-4 perfboard and enclosure.
+6. Select the acquisition architecture from evidence; an Arduino, ESP32, or external ADC must not be treated as the entropy source.
+7. Optionally transfer the validated ED 3 circuit to perfboard and repeat its checks.
+8. Build the ED 4 PCB within the printed enclosure's 89 by 52 mm board envelope.
 
 <a id="licence"></a>
 ## Licence

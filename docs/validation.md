@@ -61,7 +61,8 @@ Statistical tests cannot certify a generator for a security application or ident
 6. Choose an IID or non IID model based on evidence.
 7. Estimate entropy conservatively and define health test limits.
 8. Condition only within the supported entropy rate.
-9. Repeat relevant validation after the ED-4 perfboard transfer.
+9. Repeat relevant validation after any optional ED 3 perfboard transfer and
+   again after building the ED 4 PCB and fitting it inside the enclosure.
 
 ## Primary references
 

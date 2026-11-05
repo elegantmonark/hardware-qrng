@@ -49,9 +49,31 @@ Successful ADC readings confirmed basic connectivity, but systematic probing fou
 
 ED-3 replaces the two signal-gain stages with one buffered midpoint reference and one signal amplifier. The redesign is intended to prevent the gain network from collapsing the reference and to make staged fault isolation easier. Assembly and validation remain pending.
 
-## ED-4: enclosure and permanent build direction
+## ED 4: PCB and existing printed enclosure
 
-ED-4 is the later mechanical stage: transfer of a verified ED-3 circuit to perfboard, labelled external wiring, strain relief, and a 3D printed enclosure. The first base was printed in October 2026, and an unpopulated 89 by 52 mm perfboard fitted correctly between its locating features. This remains a fit and presentation prototype. Populated-board clearance, cable routing and electrical validation must still be checked after transfer.
+The first enclosure base was printed in October 2026, and an unpopulated
+89 by 52 mm perfboard fitted between its locating features. The photographs
+and enclosure CAD preserve that initial fit investigation. The earlier unfinished KiCad
+perfboard placement draft was later superseded by the routed ED4 A project.
+
+On 5 November 2026, the stage plan was consolidated into four demonstrators.
+ED 3 covers breadboard validation and optional perfboard transfer afterwards.
+ED 4 covers the custom routed PCB and the existing printed enclosure. The
+nominal PCB target is 89 by 52 mm and 1.6 mm thick, with final fit and connector
+clearances to be checked against the actual print.
+
+The PCB will use the simplest analogue topology that survives staged voltage
+checks, control captures, restarts and signal analysis. Arduino, ESP32 and
+external ADC acquisition remain options to evaluate. The processor acquires
+and transports measurements and is not the physical entropy source.
+
+The first PCB variant is ED4 A for an external Arduino with a 5 V ADC
+interface. Its KiCad schematic and routed layout were prepared on 5 November.
+Board revision B uses an MCP6002, a 100k and 1k gain network, and parts selected
+for the BOM. The source jumper and local supply capacitor support bench checks.
+KiCad ERC, DRC and schematic parity pass. Breadboard validation, owner review
+and populated enclosure fit remain pending. ED4 E is a separate planned ESP32
+version.
 
 ## Current direction
 
@@ -60,5 +82,7 @@ The project is moving from "bits that look random" toward a reproducible investi
 - preserve ED-1 as historical evidence;
 - assemble and characterise ED-3 with controls and repeat captures;
 - estimate entropy conservatively rather than from balance alone;
-- add conditioning and health tests only after establishing a source model; and
-- build ED-4 without confusing mechanical completion with validation.
+- add conditioning and health tests only after establishing a source model;
+- compare acquisition choices without assuming that a more powerful microcontroller provides a better ADC; and
+- optionally transfer the validated ED 3 circuit to perfboard and check it again;
+- build the ED 4 PCB to fit the enclosure already printed.
