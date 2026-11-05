@@ -57,6 +57,11 @@ It passes KiCad ERC, DRC and schematic parity checks. Circuit validation and
 populated enclosure fit remain pending. The [purchase BOM](hardware/ED-4/pcb/ED4-A/BOM.csv)
 records the chosen components.
 
+I have also included the [JLCPCB Gerber ZIP, assembly BOM and placement file](hardware/ED-4/pcb/ED4-A/jlcpcb/README.md).
+That assembly option has JLCPCB fit 11 components. I will solder R3, R4, R6
+and D1 after delivery because those parts were unavailable in the assembly
+inventory. The removable JP1 shunt is separate too.
+
 I also ran an [ngspice signal path check](hardware/ED-4/pcb/ED4-A/simulation/README.md)
 with the PCB component values and a small injected test signal. The approximate
 model shows the expected reference and gain at the Arduino input. It does not

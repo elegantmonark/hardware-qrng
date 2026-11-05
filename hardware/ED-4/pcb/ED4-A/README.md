@@ -24,6 +24,7 @@ actual circuit rather than parts already on hand.
 | [Schematic PDF](drawings/ED4_A_schematic.pdf) | Connected circuit and pin labels |
 | [Assembly PDF](drawings/ED4_A_assembly.pdf) | Component positions and enclosure rail strips |
 | [BOM](BOM.csv) | Selected manufacturer parts and board footprints |
+| [JLCPCB order files](jlcpcb/README.md) | Gerber ZIP, assembly BOM and placement file |
 
 KiCad 10.0.1 reports 0 ERC violations, 0 DRC violations, 0 unconnected items
 and 0 schematic parity issues. An independent pin contract check agreed with
@@ -34,10 +35,11 @@ signal and an approximate op amp model to check the intended reference and
 amplifier response. It does not model the LED noise or validate the PCB in
 hardware.
 
-The BOM lists selected manufacturer parts. Confirm stock and the actual
-enclosure fit before ordering. KiCad can export Gerbers and the drill file from
-the PCB when the design is ready for manufacture. A successful layout check
-does not establish that the LED produces useful entropy in this circuit.
+The full BOM lists the original part choices. The JLCPCB assembly BOM uses
+available alternatives for C1, C2 and C3, and leaves R3, R4, R6 and D1 for
+hand assembly. Check part selection and the actual enclosure fit before
+ordering. A successful layout check does not establish that the LED produces
+useful entropy in this circuit.
 
 ## Arduino connector
 
