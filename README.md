@@ -19,10 +19,10 @@ be measured. [Simulation details](hardware/ED-4/pcb/ED4-A/simulation/README.md).
 
 ## Contents
 
-- **Results and physics:** [MATLAB analysis](#matlab) · [Overview](#overview) · [ED-1 results](#ed1results) · [Quantum triggers and TRNG](#quantumtriggers) · [Limitations](#limits)
-- **Hardware:** [ED-4A PCB](#ed4pcb) · [PCB views](#pcbviews) · [ngspice checks](#ngspicechecks) · [ED-2 circuit](#ed2circuit) · [ED-3 circuit](#ed3circuit) · [ED-4 enclosure](#ed4enclosure) · [Hardware photographs](#photographs)
-- **Project notes:** [Quick terminology](#terminology) · [Development](#development) · [Repository guide](#repositoryguide) · [Next work](#nextwork) · [Licence](#licence)
-- **Run it yourself:** [Reproducing the analysis](#analysis) · [Collecting new data](#collection)
+- [MATLAB analysis](#matlab) · [ED-4A Arduino PCB](#ed4pcb) · [ED-4A PCB views](#pcbviews) · [ngspice checks](#ngspicechecks) · [Overview](#overview)
+- [Quick terminology](#terminology) · [Development](#development) · [ED 1 results](#ed1results) · [Quantum triggers and a possible TRNG](#quantumtriggers) · [Limitations](#limits)
+- [ED 2 circuit](#ed2circuit) · [ED 3 circuit](#ed3circuit) · [ED-4 PCB and printed enclosure](#ed4enclosure) · [Hardware photographs](#photographs) · [Repository guide](#repositoryguide)
+- [Next work](#nextwork) · [Licence](#licence) · [Reproducing the analysis](#analysis) · [Collecting new data](#collection)
 
 <a id="matlab"></a>
 ## MATLAB analysis
