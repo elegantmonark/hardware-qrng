@@ -51,6 +51,13 @@ It passes KiCad ERC, DRC and schematic parity checks. Circuit validation and
 populated enclosure fit remain pending. The [purchase BOM](hardware/ED-4/pcb/ED4-A/BOM.csv)
 records the chosen components.
 
+I also ran an [ngspice signal path check](hardware/ED-4/pcb/ED4-A/simulation/README.md)
+with the PCB component values and a small injected test signal. The approximate
+model shows the expected reference and gain at the Arduino input. It does not
+model the LED noise or validate the entropy source.
+
+![ED4 A simulated input and output response](hardware/ED-4/pcb/ED4-A/simulation/ed4a_signal_path_review.png)
+
 ED4 A uses an external Arduino with a 5 V ADC interface. ED4 E is the planned
 ESP32 revision and will have its own ADC and power interface review.
 

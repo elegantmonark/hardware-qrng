@@ -1,0 +1,32 @@
+ED4 A signal path check with revision B component values
+* A known test signal is fed into JP1 pin 2 instead of using the LED source.
+* The op amp is an approximate one pole model, not the MCP6002 model.
+V5 v5 0 5
+R1 v5 vraw 10k
+R2 vraw 0 10k
+C1 vraw 0 10u
+XBUF vraw vbuf v5 0 vbuf SIMPLE_OPAMP
+VTEST feed 0 DC 0 AC 1 SIN(0 2m 1k)
+C4 feed signal 100n
+R4 signal vbuf 100k
+XGAIN signal feedback v5 0 ampout SIMPLE_OPAMP
+R5 feedback vbuf 1k
+R6 ampout feedback 100k
+R7 ampout a0 1k
+RADC a0 0 100meg
+CADC a0 0 20p
+.subckt SIMPLE_OPAMP plus minus vp vn out
+EERR drive 0 plus minus 100000
+RP drive slow 1k
+CP slow 0 15.9u
+BOUT out 0 V=min(max(V(slow),V(vn)+0.05),V(vp)-0.05)
+.ends SIMPLE_OPAMP
+.control
+set noaskquit
+tran 10u 20m
+wrdata ed4a_transient.txt v(vraw) v(vbuf) v(signal) v(ampout) v(a0)
+ac dec 40 1 1meg
+wrdata ed4a_ac.txt v(a0)
+quit
+.endc
+.end

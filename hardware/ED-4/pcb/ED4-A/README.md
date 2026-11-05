@@ -29,6 +29,11 @@ KiCad 10.0.1 reports 0 ERC violations, 0 DRC violations, 0 unconnected items
 and 0 schematic parity issues. An independent pin contract check agreed with
 the schematic and board. These checks do not replace bench validation.
 
+The [ngspice signal path check](simulation/README.md) uses an injected test
+signal and an approximate op amp model to check the intended reference and
+amplifier response. It does not model the LED noise or validate the PCB in
+hardware.
+
 The BOM lists selected manufacturer parts. Confirm stock and the actual
 enclosure fit before ordering. KiCad can export Gerbers and the drill file from
 the PCB when the design is ready for manufacture. A successful layout check
