@@ -9,7 +9,11 @@ This is a living checklist rather than a deadline schedule. A task is complete o
 - [x] Archive the ED-1 Arduino sampler separately from current firmware.
 - [x] Add selected, captioned ED-1 hardware photographs.
 
-## 2. Complete the ED-2 hardware record
+## 2. ED-2 investigation complete
+
+The breadboard investigation is closed after the reference loading problem was
+documented. The remaining items below are optional archival improvements, not
+conditions for moving on to ED 3 and ED 4.
 
 - [x] Record the complete breadboard placement and electrical netlist in `circuit.md`.
 - [x] Separate the acquisition status LED from the extracted bitstream.

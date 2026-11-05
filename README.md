@@ -63,7 +63,7 @@ the table distinguishes the completed work, archived prototypes and planned buil
 | Stage | Purpose | Current state |
 |---|---|---|
 | **ED-1** | Prove that the full path from circuit to saved data and analysis could work | Complete and preserved |
-| **ED-2** | Explore a documented two-stage analogue path and acquisition process | Preserved as a breadboard development stage; reference loading found during bring-up |
+| **ED-2** | Explore a documented two-stage analogue path and acquisition process | Completed and preserved as a breadboard investigation; reference loading found during bring-up and recorded |
 | **ED-3** | Validate a simpler buffered reference circuit on breadboard, with optional perfboard transfer afterwards | Design documented; assembly and validation pending |
 | **ED-4** | Custom PCB for the existing printed enclosure | ED4 A Arduino layout available for review; 89 by 52 mm; bench and populated fit checks pending. ED4 E ESP32 revision planned |
 
@@ -153,7 +153,7 @@ ED-2 uses the following signal path:
 
 The exact component values, breadboard positions, expected voltages and assembly order are documented in [`circuit.md`](circuit.md). The matching sampler is stored at [`firmware/ED-2/entropy_sampler_ed2.ino`](firmware/ED-2/entropy_sampler_ed2.ino).
 
-ED-2 produced live ADC readings, but systematic probing exposed reference loading in the assembled topology. It has no published validation dataset and is retained as a development stage rather than a verified source.
+ED-2 produced live ADC readings, but systematic probing exposed reference loading in the assembled topology. ED-2 is completed and preserved as an investigation with a documented design fault. It has no published validation dataset and is not a verified entropy source.
 
 <a id="ed3circuit"></a>
 ## ED 3 circuit
