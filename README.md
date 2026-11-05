@@ -11,6 +11,12 @@ This is my attempt to investigate whether a circuit built around a green LED, an
 | ![ED-1 bit balance, entropy and raw ADC comparison](figures/ED-1/comparison.png) | ![Close view of the latest documented ED-2 breadboard](hardware/ED-2/photos/ed2-current-breadboard-closeup.jpeg) |
 | ED-1 output compared with a deterministic Mersenne Twister control. Similar results do not establish physical origin or security. | Latest documented ED-2 arrangement, retained as a development build rather than a validated entropy source. |
 
+**ED4 A signal path simulation:** A small test signal is amplified to the expected
+Arduino input range in an approximate ngspice model. The LED source remains to
+be measured. [Simulation details](hardware/ED-4/pcb/ED4-A/simulation/README.md).
+
+![ED4 A simulated input and output response](hardware/ED-4/pcb/ED4-A/simulation/ed4a_signal_path_review.png)
+
 ## Contents
 
 [MATLAB analysis](#matlab) | [ED4 PCB](#ed4pcb) | [Overview](#overview) | [Quick terminology](#terminology) | [Development](#development) | [ED 1 results](#ed1results) | [ED 2 circuit](#ed2circuit) | [ED 3 circuit](#ed3circuit) | [ED 4 enclosure](#ed4enclosure) | [Hardware photographs](#photographs) | [Repository guide](#repositoryguide) | [Reproducing the analysis](#analysis) | [Collecting new data](#collection) | [Bitstream Art](#art) | [Limits](#limits) | [Next work](#nextwork) | [Licence](#licence)
@@ -55,8 +61,6 @@ I also ran an [ngspice signal path check](hardware/ED-4/pcb/ED4-A/simulation/REA
 with the PCB component values and a small injected test signal. The approximate
 model shows the expected reference and gain at the Arduino input. It does not
 model the LED noise or validate the entropy source.
-
-![ED4 A simulated input and output response](hardware/ED-4/pcb/ED4-A/simulation/ed4a_signal_path_review.png)
 
 ED4 A uses an external Arduino with a 5 V ADC interface. ED4 E is the planned
 ESP32 revision and will have its own ADC and power interface review.
