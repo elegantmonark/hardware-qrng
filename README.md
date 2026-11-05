@@ -19,7 +19,7 @@ be measured. [Simulation details](hardware/ED-4/pcb/ED4-A/simulation/README.md).
 
 ## Contents
 
-[MATLAB analysis](#matlab) | [ED4 PCB](#ed4pcb) | [Overview](#overview) | [Quick terminology](#terminology) | [Development](#development) | [ED 1 results](#ed1results) | [ED 2 circuit](#ed2circuit) | [ED 3 circuit](#ed3circuit) | [ED 4 enclosure](#ed4enclosure) | [Hardware photographs](#photographs) | [Repository guide](#repositoryguide) | [Reproducing the analysis](#analysis) | [Collecting new data](#collection) | [Bitstream Art](#art) | [Limits](#limits) | [Next work](#nextwork) | [Licence](#licence)
+[MATLAB analysis](#matlab) | [ED4 PCB](#ed4pcb) | [PCB views](#pcbviews) | [ngspice checks](#ngspicechecks) | [Overview](#overview) | [Quick terminology](#terminology) | [Development](#development) | [ED 1 results](#ed1results) | [ED 2 circuit](#ed2circuit) | [ED 3 circuit](#ed3circuit) | [ED 4 enclosure](#ed4enclosure) | [Hardware photographs](#photographs) | [Repository guide](#repositoryguide) | [Reproducing the analysis](#analysis) | [Collecting new data](#collection) | [Bitstream Art](#art) | [Limits](#limits) | [Next work](#nextwork) | [Licence](#licence)
 
 <a id="matlab"></a>
 ## MATLAB analysis
@@ -58,9 +58,10 @@ populated enclosure fit remain pending. The [purchase BOM](hardware/ED-4/pcb/ED4
 records the chosen components.
 
 I have also included the [JLCPCB Gerber ZIP, assembly BOM and placement file](hardware/ED-4/pcb/ED4-A/jlcpcb/README.md).
-That assembly option has JLCPCB fit 11 components. I will solder R3, R4, R6
-and D1 after delivery because those parts were unavailable in the assembly
-inventory. The removable JP1 shunt is separate too.
+That assembly option covers 11 components. R3, R4, R6 and D1 would be fitted
+by hand because they were unavailable in the assembly inventory. The removable
+JP1 shunt is separate too. I may instead order the bare PCB and fit all the
+components myself.
 
 I also ran an [ngspice signal path check](hardware/ED-4/pcb/ED4-A/simulation/README.md)
 with the PCB component values and a small injected test signal. The approximate
@@ -69,6 +70,50 @@ model the LED noise or validate the entropy source.
 
 ED4 A uses an external Arduino with a 5 V ADC interface. ED4 E is the planned
 ESP32 revision and will have its own ADC and power interface review.
+
+<a id="pcbviews"></a>
+## ED4-A PCB views
+
+These are KiCad views of the revision B design. They show the intended board
+and component positions before manufacture. The 3D renders show R3, R4, R6
+and D1 in place, although those parts are omitted from the optional JLCPCB
+assembly order. C4 appears as a footprint because its 3D model is not shown.
+The LED model is red in these views, but the BOM specifies a green LED.
+
+### Routed layout
+
+![KiCad routed layout showing ED4-A traces, test points and rail clearance areas](hardware/ED-4/pcb/ED4-A/views/ed4a_rev_b_routed_layout.png)
+
+### Component renders
+
+| Top view | Angled view |
+|:---:|:---:|
+| ![KiCad top render of the populated ED4-A design](hardware/ED-4/pcb/ED4-A/views/ed4a_rev_b_top_render.png) | ![KiCad angled render of the populated ED4-A design](hardware/ED-4/pcb/ED4-A/views/ed4a_rev_b_angled_render.png) |
+
+The renders show the planned layout, not a built board or a confirmed fit in
+the printed enclosure.
+
+<a id="ngspicechecks"></a>
+## ngspice checks
+
+I used ngspice to test the ED4 A analogue path with known inputs before
+building the board. The [netlists, figures and method](hardware/ED-4/pcb/ED4-A/simulation/README.md)
+are in the simulation folder. They use the PCB values and an approximate op amp
+model. None of these runs models the LED noise or proves that the circuit will
+produce useful entropy.
+
+The first check used a 2 mV peak signal at 1 kHz and showed about 100 times
+gain at the Arduino input. I then grounded the input and added a 100 mV peak,
+100 Hz ripple to the 5 V rail. In that model A0 still moved by about 160 mV
+peak, so the actual supply and grounded control will need careful measurement.
+
+![Simulated effect of supply ripple on the reference and A0](hardware/ED-4/pcb/ED4-A/simulation/ed4a_supply_ripple.png)
+
+I also compared 2 mV and 40 mV peak test inputs. The smaller signal stayed
+within the Arduino input range, while the larger one reached both output
+limits in the model. The LED signal amplitude has not been measured yet.
+
+![Simulated small input and output clipping](hardware/ED-4/pcb/ED4-A/simulation/ed4a_input_headroom.png)
 
 <a id="overview"></a>
 ## Overview

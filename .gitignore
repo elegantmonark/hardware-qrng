@@ -20,6 +20,7 @@ data/ED-1/derived/
 data/ED-2/runs/
 data/controls/
 results/**/qrng_nist.bin
+hardware/ED-4/pcb/ED4-A/simulation/ed4a_*.txt
 
 # Local rendering and browser state must never be committed.
 .edge-render-profile/

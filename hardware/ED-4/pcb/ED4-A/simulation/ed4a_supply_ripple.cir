@@ -1,0 +1,34 @@
+ED4 A supply ripple check
+
+* A 100 mV peak ripple at 100 Hz is added to the 5 V supply.
+* The source input is grounded so the output movement comes from the supply.
+V5 v5 0 SIN(5 0.1 100)
+R1 v5 vraw 10k
+R2 vraw 0 10k
+C1 vraw 0 10u
+XBUF vraw vbuf v5 0 vbuf SIMPLE_OPAMP
+VCONTROL feed 0 0
+C4 feed signal 100n
+R4 signal vbuf 100k
+XGAIN signal feedback v5 0 ampout SIMPLE_OPAMP
+R5 feedback vbuf 1k
+R6 ampout feedback 100k
+R7 ampout a0 1k
+RADC a0 0 100meg
+CADC a0 0 20p
+
+* This simple model is the same one used in the first signal path check.
+.subckt SIMPLE_OPAMP plus minus vp vn out
+EERR drive 0 plus minus 100000
+RP drive slow 1k
+CP slow 0 15.9u
+BOUT out 0 V=min(max(V(slow),V(vn)+0.05),V(vp)-0.05)
+.ends SIMPLE_OPAMP
+
+.control
+set noaskquit
+tran 20u 100m
+wrdata ed4a_supply_ripple.txt v(v5) v(vraw) v(vbuf) v(a0)
+quit
+.endc
+.end

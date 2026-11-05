@@ -1,0 +1,45 @@
+ED4 A input headroom check
+
+* Two separate copies of the gain stage use 2 mV and 40 mV peak inputs.
+* Only one input is fitted on the real board. The copies make comparison easy.
+V5 v5 0 5
+R1 v5 vraw 10k
+R2 vraw 0 10k
+C1 vraw 0 10u
+XBUF vraw vbuf v5 0 vbuf SIMPLE_OPAMP
+
+VSMALL feed_small 0 SIN(0 2m 1k)
+C4S feed_small signal_small 100n
+R4S signal_small vbuf 100k
+XGAIN_SMALL signal_small feedback_small v5 0 out_small SIMPLE_OPAMP
+R5S feedback_small vbuf 1k
+R6S out_small feedback_small 100k
+R7S out_small a0_small 1k
+RADC_S a0_small 0 100meg
+CADC_S a0_small 0 20p
+
+VLARGE feed_large 0 SIN(0 40m 1k)
+C4L feed_large signal_large 100n
+R4L signal_large vbuf 100k
+XGAIN_LARGE signal_large feedback_large v5 0 out_large SIMPLE_OPAMP
+R5L feedback_large vbuf 1k
+R6L out_large feedback_large 100k
+R7L out_large a0_large 1k
+RADC_L a0_large 0 100meg
+CADC_L a0_large 0 20p
+
+* This is a simple one pole amplifier model with output limits near the rails.
+.subckt SIMPLE_OPAMP plus minus vp vn out
+EERR drive 0 plus minus 100000
+RP drive slow 1k
+CP slow 0 15.9u
+BOUT out 0 V=min(max(V(slow),V(vn)+0.05),V(vp)-0.05)
+.ends SIMPLE_OPAMP
+
+.control
+set noaskquit
+tran 5u 10m
+wrdata ed4a_input_headroom.txt v(feed_small) v(a0_small) v(feed_large) v(a0_large)
+quit
+.endc
+.end
