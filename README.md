@@ -1,6 +1,6 @@
 # Hardware QRNG Investigation
 
-This is my attempt to investigate whether a circuit built around a green LED, an LM358 op amp and an Arduino can serve as a physical entropy source, using a set of analysis tools to evaluate its output. I also generated [cool art](#art) using the bitstream, which you should check out. Refer to the [repository guide](#repositoryguide) and use the [contents section](#contents) to access everything more easily. Enjoy your time here :)) (BE SURE TO READ THE "IMPORTANT" SECTIONS!)
+This is my attempt to investigate whether a circuit built around a reverse biased green LED, an amplifier and an Arduino can serve as a physical entropy source. ED-1 used an LM358; the newer ED-4A PCB specifies an MCP6002. The [contents](#contents) and [repository guide](#repositoryguide) point to the measurements, circuit revisions and analysis. Enjoy your time here :)) (BE SURE TO READ THE "IMPORTANT" SECTIONS!)
 
 **Author:** Trishan Biswas  
 **Project started:** December 2025  
@@ -11,15 +11,18 @@ This is my attempt to investigate whether a circuit built around a green LED, an
 | ![ED-1 bit balance, entropy and raw ADC comparison](figures/ED-1/comparison.png) | ![Close view of the latest documented ED-2 breadboard](hardware/ED-2/photos/ed2-current-breadboard-closeup.jpeg) |
 | ED-1 output compared with a deterministic Mersenne Twister control. Similar results do not establish physical origin or security. | Latest documented ED-2 arrangement, retained as a development build rather than a validated entropy source. |
 
-**ED4 A signal path simulation:** A small test signal is amplified to the expected
+**ED-4A signal path simulation:** A small test signal is amplified to the expected
 Arduino input range in an approximate ngspice model. The LED source remains to
 be measured. [Simulation details](hardware/ED-4/pcb/ED4-A/simulation/README.md).
 
-![ED4 A simulated input and output response](hardware/ED-4/pcb/ED4-A/simulation/ed4a_signal_path_review.png)
+![ED-4A simulated input and output response](hardware/ED-4/pcb/ED4-A/simulation/ed4a_signal_path_review.png)
 
 ## Contents
 
-[MATLAB analysis](#matlab) | [ED4 PCB](#ed4pcb) | [PCB views](#pcbviews) | [ngspice checks](#ngspicechecks) | [Overview](#overview) | [Quick terminology](#terminology) | [Development](#development) | [ED 1 results](#ed1results) | [ED 2 circuit](#ed2circuit) | [ED 3 circuit](#ed3circuit) | [ED 4 enclosure](#ed4enclosure) | [Hardware photographs](#photographs) | [Repository guide](#repositoryguide) | [Reproducing the analysis](#analysis) | [Collecting new data](#collection) | [Bitstream Art](#art) | [Limits](#limits) | [Next work](#nextwork) | [Licence](#licence)
+- **Results and physics:** [MATLAB analysis](#matlab) · [Overview](#overview) · [ED-1 results](#ed1results) · [Quantum triggers and TRNG](#quantumtriggers) · [Limitations](#limits)
+- **Hardware:** [ED-4A PCB](#ed4pcb) · [PCB views](#pcbviews) · [ngspice checks](#ngspicechecks) · [ED-2 circuit](#ed2circuit) · [ED-3 circuit](#ed3circuit) · [ED-4 enclosure](#ed4enclosure) · [Hardware photographs](#photographs)
+- **Project notes:** [Quick terminology](#terminology) · [Development](#development) · [Repository guide](#repositoryguide) · [Next work](#nextwork) · [Licence](#licence)
+- **Run it yourself:** [Reproducing the analysis](#analysis) · [Collecting new data](#collection)
 
 <a id="matlab"></a>
 ## MATLAB analysis
@@ -42,9 +45,9 @@ results matched the Python audit, including all 101 exported correlation rows.
 These are descriptive checks, not proof of quantum origin or secure entropy.
 
 <a id="ed4pcb"></a>
-## ED4 A Arduino PCB
+## ED-4A Arduino PCB
 
-The first ED 4 PCB is a two layer, 89 by 52 mm board for the enclosure already
+The first ED-4 PCB is a two layer, 89 by 52 mm board for the enclosure already
 printed. It brings the buffered reference, source selector, signal amplifier
 and Arduino interface together with seven test points and a bottom ground fill.
 The design uses through hole parts for assembly and inspection.
@@ -68,11 +71,11 @@ with the PCB component values and a small injected test signal. The approximate
 model shows the expected reference and gain at the Arduino input. It does not
 model the LED noise or validate the entropy source.
 
-ED4 A uses an external Arduino with a 5 V ADC interface. ED4 E is the planned
+ED-4A uses an external Arduino with a 5 V ADC interface. ED-4E is the planned
 ESP32 revision and will have its own ADC and power interface review.
 
 <a id="pcbviews"></a>
-## ED4-A PCB views
+## ED-4A PCB views
 
 These are KiCad views of the revision B design. They show the intended board
 and component positions before manufacture. The 3D renders show R3, R4, R6
@@ -82,13 +85,13 @@ The LED model is red in these views, but the BOM specifies a green LED.
 
 ### Routed layout
 
-![KiCad routed layout showing ED4-A traces, test points and rail clearance areas](hardware/ED-4/pcb/ED4-A/views/ed4a_rev_b_routed_layout.png)
+![KiCad routed layout showing ED-4A traces, test points and rail clearance areas](hardware/ED-4/pcb/ED4-A/views/ed4a_rev_b_routed_layout.png)
 
 ### Component renders
 
 | Top view | Angled view |
 |:---:|:---:|
-| ![KiCad top render of the populated ED4-A design](hardware/ED-4/pcb/ED4-A/views/ed4a_rev_b_top_render.png) | ![KiCad angled render of the populated ED4-A design](hardware/ED-4/pcb/ED4-A/views/ed4a_rev_b_angled_render.png) |
+| ![KiCad top render of the populated ED-4A design](hardware/ED-4/pcb/ED4-A/views/ed4a_rev_b_top_render.png) | ![KiCad angled render of the populated ED-4A design](hardware/ED-4/pcb/ED4-A/views/ed4a_rev_b_angled_render.png) |
 
 The renders show the planned layout, not a built board or a confirmed fit in
 the printed enclosure.
@@ -96,7 +99,7 @@ the printed enclosure.
 <a id="ngspicechecks"></a>
 ## ngspice checks
 
-I used ngspice to test the ED4 A analogue path with known inputs before
+I used ngspice to test the ED-4A analogue path with known inputs before
 building the board. The [netlists, figures and method](hardware/ED-4/pcb/ED4-A/simulation/README.md)
 are in the simulation folder. They use the PCB values and an approximate op amp
 model. None of these runs models the LED noise or proves that the circuit will
@@ -126,7 +129,7 @@ the table distinguishes the completed work, archived prototypes and planned buil
 | **ED-1** | Prove that the full path from circuit to saved data and analysis could work | Complete and preserved |
 | **ED-2** | Explore a documented two-stage analogue path and acquisition process | Completed and preserved as a breadboard investigation; reference loading found during bring-up and recorded |
 | **ED-3** | Validate a simpler buffered reference circuit on breadboard, with optional perfboard transfer afterwards | Design documented; assembly and validation pending |
-| **ED-4** | Custom PCB for the existing printed enclosure | ED4 A Arduino layout available for review; 89 by 52 mm; bench and populated fit checks pending. ED4 E ESP32 revision planned |
+| **ED-4** | Custom PCB for the existing printed enclosure | ED-4A Arduino layout available for review; 89 by 52 mm; bench and populated fit checks pending. ED-4E ESP32 revision planned |
 
 The name QRNG describes the research direction. The present evidence supports an experimental physical entropy source, not a certified quantum random number generator or a source suitable for cryptographic use.
 
@@ -148,7 +151,6 @@ Statistical tests can describe a bitstream, but they cannot identify its physica
 | **Least significant bit** | The final binary digit of an ADC reading, recorded here as a candidate random bit |
 | **Bitstream** | The resulting sequence of zeros and ones |
 | **Software control** | A deterministic Mersenne Twister sequence used for comparison, not a NIST reference generator |
-| **Bitstream Art** | Visuals drawn by custom Python programs whose choices are driven by the recorded ED-1 bits. No generative AI model was used |
 | **ED** | Entropy Demonstrator |
 
 The analysis checks balance, repetition, correlation and stability. A balanced output alone does not prove that the signal is quantum or secure.
@@ -167,10 +169,10 @@ ED-2 kept the original LED source idea but added a defined midpoint reference, t
 
 ED 3 starts again with a simpler topology. Its documented breadboard uses one
 LM358 section to buffer the midpoint and the other as a signal amplifier. The
-ED 4 PCB revision B uses a pin compatible MCP6002 and revised resistor values
+ED-4 PCB revision B uses a pin compatible MCP6002 and revised resistor values
 to reduce input bias error. That component change needs its own bench checks.
 After breadboard validation, the ED 3 circuit may also be transferred to
-perfboard and checked again. ED 4 has a nominal 89 by 52 mm outline for the
+perfboard and checked again. ED-4 has a nominal 89 by 52 mm outline for the
 enclosure already printed. The earlier
 bare perfboard fit check establishes a starting board envelope; PCB tolerances,
 component clearance and connector access still need checking.
@@ -199,6 +201,59 @@ The bit balance was encouraging, but the raw ADC correlation showed that the ana
 ![ED-1 source and software control comparison](figures/ED-1/comparison.png)
 
 The full interpretation is recorded in [`docs/validation.md`](docs/validation.md).
+
+<a id="quantumtriggers"></a>
+## Quantum triggers and a possible TRNG
+
+The idea is to use noise from a reverse biased semiconductor junction as the
+physical input to a true random number generator (TRNG). Zener tunnelling is a
+quantum process in which carriers cross the junction barrier. Avalanche
+breakdown instead multiplies carriers through impact ionisation; a small,
+stochastic carrier event can seed a much larger cascade. That makes tiny events
+measurable in a suitable device. Signal size and entropy are different things,
+though: a large, changing voltage is not automatically unpredictable.
+[Analog Devices' breakdown explanation](https://wiki.analog.com/university/courses/electronics/text/chapter-14#zener_diodes)
+distinguishes the Zener and avalanche regimes.
+
+ED-4A biases an ordinary green LED through 10 MΩ from 3.3 V. I have not measured
+its reverse current or shown that this LED reaches Zener or avalanche breakdown
+at that bias. The board's amplifier has a simulated gain of about 100 for a
+known test signal; an additional avalanche multiplication factor has not been
+measured. For now this is a **candidate physical TRNG with a possible quantum
+contribution**, rather than an established QRNG. [Diode tunnelling has been used
+in a demonstrated QRNG](https://doi.org/10.1103/PhysRevApplied.11.034060), but
+that result does not establish the mechanism in this LED.
+
+The useful experiment is to measure the LED voltage and reverse current, then
+compare the source with grounded input, resistor and covered LED controls over
+repeat captures. That will show whether the junction adds measurable variation
+before making a claim about where the unpredictable part comes from. The
+[validation notes](docs/validation.md) spell out the remaining checks.
+
+<a id="limits"></a>
+## Limitations
+
+The present data cannot separate junction noise from Johnson–Nyquist noise in
+resistors, low frequency flicker noise, amplifier and ADC noise, or movement of
+the power supply. Thermal and flicker noise can be genuinely stochastic; the
+issue is attributing the measured bits specifically to a quantum junction
+process. Supply ripple and coupled interference can add repeatable structure
+that looks like activity at the ADC. The [ngspice grounded-input check](hardware/ED-4/pcb/ED4-A/simulation/README.md)
+shows why the reference and supply need measuring on the real board.
+
+ED-1 contains one capture with strongly correlated raw ADC readings. ED-2
+exposed a reference loading fault. ED-3 and the ED-4A PCB still need source and
+control measurements. Near equal numbers of zeros and ones, a high marginal
+Shannon entropy, or a large analogue signal do not establish an independent
+entropy rate. [NIST SP 800-90B](https://doi.org/10.6028/NIST.SP.800-90B)
+provides a framework for characterising an entropy source; this project has
+not completed that validation.
+
+> [!CAUTION]
+> No output from this repository should be used for cryptographic keys, authentication, gambling, financial decisions or safety critical systems.
+
+The [detailed limitations](docs/limitations.md), [safety notes](docs/safety.md)
+and [security notes](SECURITY.md) give the test conditions and remaining gaps.
 
 <a id="ed2circuit"></a>
 ## ED 2 circuit
@@ -235,9 +290,9 @@ validation and must repeat the electrical checks and control captures after
 transfer.
 
 <a id="ed4enclosure"></a>
-## ED 4 PCB and printed enclosure
+## ED-4 PCB and printed enclosure
 
-ED 4 combines a custom routed PCB with the existing two part enclosure. The base
+ED-4 combines a custom routed PCB with the existing two part enclosure. The base
 was printed successfully, and an 89 by 52 mm bare perfboard fits between its
 locating features. The PCB will use that nominal envelope, with a target
 thickness of 1.6 mm. Its final fit must account for print tolerances, support
@@ -258,13 +313,13 @@ connector and acquisition interface will follow the validated ED 3 circuit.
 The [PCB plan](hardware/ED-4/pcb-plan.md) records the mechanical constraints,
 intended features and checks required before fabrication.
 
-The [ED4 A Arduino PCB](hardware/ED-4/pcb/ED4-A/README.md) is the current routed
-review design. ED4 E will cover ESP32 separately. The board outline is shared;
+The [ED-4A Arduino PCB](hardware/ED-4/pcb/ED4-A/README.md) is the current routed
+review design. ED-4E will cover ESP32 separately. The board outline is shared;
 the ADC and power interfaces must be reviewed for each revision.
 
 The editable source, printable files, dimensions and print guidance are available in the [ED-4 CAD directory](hardware/ED-4/cad/README.md).
 
-The current KiCad evidence is the [ED4 A schematic and routed PCB](hardware/ED-4/pcb/ED4-A/README.md).
+The current KiCad evidence is the [ED-4A schematic and routed PCB](hardware/ED-4/pcb/ED4-A/README.md).
 The layout passes ERC, DRC and schematic parity checks. The earlier unfinished
 perfboard placement draft has been superseded by this design.
 
@@ -290,7 +345,6 @@ Additional views and captions are stored in the [ED-1 hardware notes](hardware/E
 
 | Location | Contents |
 |---|---|
-| [`art/`](art/README.md) | Reproducible artwork driven by the saved ED-1 bits |
 | [`data/`](data/README.md) | Preserved captures, controls and integrity hashes |
 | [`docs/`](docs/development-log.md) | Development history, theory, limits, safety and validation plans |
 | [`figures/ED-1/`](figures/ED-1/) | Figures generated from the April 2026 capture |
@@ -299,6 +353,25 @@ Additional views and captions are stored in the [ED-1 hardware notes](hardware/E
 | [`results/`](results/README.md) | The ED-1 audit and exploratory statistical output |
 | [`software/`](software/) | Collection, analysis, comparison and extraction tools |
 | [`tests/`](tests/) | Data, link, asset, analysis and CAD integrity tests |
+
+The artwork made from the ED-1 bits is prepared as a [separate Bitstream Art project](https://github.com/elegantmonark/qrng-bitstream-art).
+
+<a id="nextwork"></a>
+## Next work
+
+1. Assemble ED-3 in tested stages, beginning with the buffered reference.
+2. Record the final component values, node checks and build photographs.
+3. Capture ED-3 controls and source runs across independent restarts.
+4. Compare its raw signal structure, bias, correlation and stability with ED-1.
+5. Establish a conservative entropy estimate before introducing conditioning.
+6. Select the acquisition architecture from evidence; an Arduino, ESP32, or external ADC must not be treated as the entropy source.
+7. Optionally transfer the validated ED 3 circuit to perfboard and repeat its checks.
+8. Build the ED-4 PCB within the printed enclosure's 89 by 52 mm board envelope.
+
+<a id="licence"></a>
+## Licence
+
+The hardware, analysis and documentation are released under the Apache License 2.0 in [`LICENSE`](LICENSE).
 
 <a id="analysis"></a>
 ## Reproducing the analysis
@@ -337,39 +410,3 @@ python software/collector.py --port COM3 --samples 1000000
 ```
 
 Replace `COM3` with the port used by the Arduino. The collector writes a new timestamped CSV and a JSON metadata file under `data/ED-3/runs/`. A capture should not be published until the circuit values, firmware version, conditions and file hash have been recorded.
-
-<a id="art"></a>
-## Bitstream Art
-
-The repository includes four artworks drawn deterministically from the ED-1 bitstream by custom Python programs. The recorded bits control visual choices such as paths, positions and colours. No generative AI model was used, and the artwork is not evidence of randomness quality.
-
-![Quantum Fields artwork driven by the recorded ED-1 bitstream](art/output/quantum_fields.png)
-
-The images and reproducible source code are available in the [`art` gallery](art/README.md).
-
-<a id="limits"></a>
-## Limits
-
-The project has not yet isolated the contribution of the LED from amplifier noise, converter behaviour, supply movement or environmental interference. ED-1 represents one capture, ED-2 exposed a reference-loading problem, and ED-3 still needs assembly and controlled testing.
-
-> [!CAUTION]
-> No output from this repository should be used for cryptographic keys, authentication, gambling, financial decisions or safety critical systems.
-
-Read [`docs/limitations.md`](docs/limitations.md), [`docs/safety.md`](docs/safety.md) and [`SECURITY.md`](SECURITY.md) before reproducing the hardware.
-
-<a id="nextwork"></a>
-## Next work
-
-1. Assemble ED-3 in tested stages, beginning with the buffered reference.
-2. Record the final component values, node checks and build photographs.
-3. Capture ED-3 controls and source runs across independent restarts.
-4. Compare its raw signal structure, bias, correlation and stability with ED-1.
-5. Establish a conservative entropy estimate before introducing conditioning.
-6. Select the acquisition architecture from evidence; an Arduino, ESP32, or external ADC must not be treated as the entropy source.
-7. Optionally transfer the validated ED 3 circuit to perfboard and repeat its checks.
-8. Build the ED 4 PCB within the printed enclosure's 89 by 52 mm board envelope.
-
-<a id="licence"></a>
-## Licence
-
-The hardware, analysis and documentation are released under the Apache License 2.0 in [`LICENSE`](LICENSE). The Bitstream Art directory retains its MIT licence in [`art/LICENSE`](art/LICENSE).

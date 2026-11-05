@@ -46,21 +46,6 @@ class RepositoryTests(unittest.TestCase):
                     missing.append(f"{markdown.relative_to(ROOT)} -> {target}")
         self.assertEqual(missing, [])
 
-    def test_art_assets_and_source_are_local(self) -> None:
-        expected_art = (
-            "quantum_fields.png",
-            "quantum_circles.png",
-            "quantum_walk.png",
-            "quantum_mosaic.png",
-        )
-        for filename in expected_art:
-            path = ROOT / "art" / "output" / filename
-            self.assertTrue(path.is_file(), filename)
-            self.assertGreater(path.stat().st_size, 0, filename)
-
-        source_text = (ROOT / "art" / "qrng_source.py").read_text(encoding="utf-8")
-        self.assertIn('"data" / "ED-1" / "qrng_bits.csv"', source_text)
-
     def test_hardware_photographs_exist(self) -> None:
         expected_photos = (
             "hardware/ED-1/photos/ed1-breadboard-overview.jpeg",

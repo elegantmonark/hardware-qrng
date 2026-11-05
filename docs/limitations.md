@@ -4,6 +4,21 @@
 
 The ED-1 record does not include a measured LED current and voltage curve, oscilloscope trace, analogue spectrum, complete gain network record, or timestamps. The captured signal may include junction noise, amplifier noise, ADC and reference noise, supply ripple, interference, sampling interaction, or floating input behaviour.
 
+ED4-A proposes a 3.3 V reverse bias through a 10 MΩ resistor for a standard
+green LED. Neither the layout checks nor the ngspice runs show that this LED is
+in breakdown. Before calling avalanche or Zener tunnelling the source mechanism,
+I need to measure its actual reverse voltage and current, then compare the
+amplified output against a grounded input and a resistor in the same circuit.
+
+Johnson–Nyquist noise from resistors and low frequency flicker noise in the
+semiconductor and amplifier could both contribute to the output. They may add
+unpredictable variation, but they make a specifically quantum claim harder to
+support without isolating the junction's contribution. Power supply ripple and
+coupled interference are different: they can make a moving ADC trace whose
+pattern is repeatable or externally controlled. The simulated grounded-input
+ripple response is a reason to measure those paths, not evidence that they
+caused the ED-1 pattern.
+
 ## ED-2 exposed a reference-loading problem
 
 ED-2 improved the circuit record and produced live ADC readings, but systematic probing showed its unbuffered midpoint reference collapsing under the Stage A reference branch. No validated ED-2 dataset is published. ED-3 is a proposed correction and must be tested independently.

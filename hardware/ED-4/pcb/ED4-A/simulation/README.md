@@ -12,6 +12,14 @@ I used ngspice to check the analogue path in the revision B PCB before ordering 
 | Low frequency corner | Around 16 Hz, set mainly by C4 and R4 |
 | Upper corner | Around 10 kHz in this approximate model |
 
+The signal enters through C4, which removes the source's DC level, and sits
+around the buffered 2.5 V midpoint at the amplifier output. Around 1 kHz the
+2 mV peak test input becomes roughly a 0.2 V peak movement at A0. This checks
+that a small signal can reach a useful part of the 5 V ADC range. It says
+nothing about the amplitude or randomness of the actual LED signal. The
+low frequency roll off means slow drift is attenuated; it does not mean that
+faster periodic interference is removed.
+
 ## Supply ripple with the input grounded
 
 I also tested what happens when the 5 V supply has a 100 mV peak ripple at
@@ -28,6 +36,15 @@ change. The size of this effect depends on the assumed ripple and model. I
 need to measure the actual supply, reference and A0 with the input grounded
 before interpreting any output variation as entropy.
 
+The important comparison is that the input is grounded in this run. The A0
+movement therefore comes from the imposed supply ripple through the reference
+and amplifier path, not from the source. Against a fixed 5 V ADC reference,
+the simulated 160 mV peak would span many ideal 10 bit steps, each about
+4.9 mV. In the actual Arduino the ADC reference also follows the 5 V rail, so
+some movement may cancel. I need a grounded control capture to see what
+remains in ADC codes. The exact result will depend on the real supply,
+wiring and MCP6002 behaviour, which this model simplifies.
+
 ## Input level and output headroom
 
 The [headroom netlist](ed4a_input_headroom.cir) compares two separate copies
@@ -40,6 +57,13 @@ The 2 mV input gives an A0 range of about 2.295 to 2.697 V. The 40 mV input
 drives the approximate output model to both limits, about 0.05 and 4.95 V.
 This shows why the real source amplitude and ADC range need checking before
 choosing the final gain.
+
+The output is centred near 2.5 V, leaving limited room before either rail.
+The 2 mV example stays within that room. A 40 mV input multiplied by roughly
+100 would demand several volts of swing on each side, which a 5 V supply
+cannot provide. Clipping would pile samples near the ADC limits and discard
+information about changes at the input. The two chosen input levels illustrate
+headroom; they are not estimates of the LED's noise amplitude.
 
 The [netlist](ed4a_signal_path.cir) uses the PCB resistor and capacitor values and a simple one pole op amp approximation. It is **not** Microchip's MCP6002 model. The Arduino input is represented by a light load, and the LED noise, board parasitics and USB supply noise are not modelled. The plot shows how the intended amplifier path responds to an injected signal. It does not establish that the physical LED produces useful entropy or that the populated board will work as a QRNG.
 
